@@ -1,0 +1,10 @@
+# Source-inspection dependencies; original image/GPU runtime not reproduced here.
+numpy==2.3.5
+scipy
+Pillow
+opencv-python
+torch
+torchvision
+transformers
+scikit-learn
+scikit-image

@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "repository": "https://github.com/Qybc/SGDB",
+  "CPU_frozen_result_reproduction": "verified",
+  "facts_to_score_and_certificate": "verified for 9031 images",
+  "recorded_language_contracts": "verified for 70 outputs",
+  "raw_image_inference": "external model/data assets required; not certified by this release",
+  "large_frontend_weights": "manifest only; separate distribution",
+  "training": 0,
+  "model_forward_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0
+}

@@ -1,0 +1,43 @@
+{
+  "generated": 70,
+  "planned": 70,
+  "accepted": 70,
+  "rejected": 0,
+  "failure_reasons": {},
+  "by_language": {
+    "en": {
+      "generated": 63,
+      "accepted": 63
+    },
+    "zh": {
+      "generated": 7,
+      "accepted": 7
+    }
+  },
+  "optimizer_steps": 0,
+  "detector_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0,
+  "language_model_calls": 70,
+  "scope": "Mechanical contract checks, not unrestricted natural-language factuality.",
+  "status": "passed",
+  "physical_gpu": 2,
+  "weights_unchanged": true,
+  "corruption_checks": 50,
+  "unchanged_frozen_traces": 70,
+  "tasks": 55,
+  "unique_sources": 63,
+  "report_statistics": {
+    "en": {
+      "reports": 63,
+      "mean_claims": 1.1587301587301588,
+      "mean_text_characters": 85.85714285714286
+    },
+    "zh": {
+      "reports": 7,
+      "mean_claims": 1.4285714285714286,
+      "mean_text_characters": 33.42857142857143
+    }
+  },
+  "review_scope": "Six main-case English/Chinese outputs inspected against typed predicate outcomes. Contract acceptance is not an external human explanation-quality score."
+}

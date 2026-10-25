@@ -1,0 +1,242 @@
+[
+  {
+    "role": "semantic_decoder",
+    "category": "breakfast_box",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/breakfast_box/best.pt",
+    "sha256": "c3db8f7e025ba38134609b00ebac9e29755943f7488f8aa2d12c8508b8cfbd3a",
+    "bytes": 490650
+  },
+  {
+    "role": "visual_frontend",
+    "category": "breakfast_box",
+    "included": false,
+    "sha256": "5c5b0e9314719234e93dfad32e1c889795b59aa7c0e52638a879ef52ee1b55eb",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/breakfast_box/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "juice_bottle",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/juice_bottle/best.pt",
+    "sha256": "e10ce3bee6173418ba0f2097d91d6f08e11f99632ca8574d973d7e71ba91f015",
+    "bytes": 491226
+  },
+  {
+    "role": "visual_frontend",
+    "category": "juice_bottle",
+    "included": false,
+    "sha256": "09a5b06688f9212742abf53aa4fa91e28e26f50fbab199b0466b73e3ba68b4f4",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/juice_bottle/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "pushpins",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/pushpins/best.pt",
+    "sha256": "27b8f9bfa6b6a7f394a7557241621a3dc9f9f262b8ba73abe01a8d0feb49793a",
+    "bytes": 488282
+  },
+  {
+    "role": "visual_frontend",
+    "category": "pushpins",
+    "included": false,
+    "sha256": "ec62ca5998323bfc16936de5f3bd93746068c8b8ba648952bac6c4ff32eae6f0",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/pushpins/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "splicing_connectors",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/splicing_connectors/best.pt",
+    "sha256": "a2260a296a4b73c919b5380a403915643b1edcec78b174b167423d9d63fb5b5d",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "splicing_connectors",
+    "included": false,
+    "sha256": "128c9854e99fcf399523729a76d9510fa1d715e83b66ea220385a82f51c0a267",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/splicing_connectors/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "screw_bag",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/screw_bag/best.pt",
+    "sha256": "d6cdd994c39d95724640e202ba5c0c854a3e0b1135daef84f55f066f81af9022",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "screw_bag",
+    "included": false,
+    "sha256": "f5cef4c8a152e4b1c5925d74b38d65cb4e2ec591e6540f476f5c68d555507172",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/screw_bag/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Sticks",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Sticks/best.pt",
+    "sha256": "7b69aa16f473661a8242c8e71f142676f47b58f8f64e00db4860eea7cc2e3447",
+    "bytes": 488282
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Sticks",
+    "included": false,
+    "sha256": "19b037649a398edbfe37c09c8360734d65745f2e340854c65134d0e0e174cf46",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Sticks/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Fruits",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Fruits/best.pt",
+    "sha256": "0d81e2619851a2f34c105de08e3c64fd8cff1d254929cf48fd3414fe9105c5c9",
+    "bytes": 488282
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Fruits",
+    "included": false,
+    "sha256": "9c608f4dd046b8f62bf2eccbd54fdc520ec19cd27d2a9518cfa97319390e9634",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Fruits/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Tools",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Tools/best.pt",
+    "sha256": "3caa8442e40752d18e5e1010e4c174501b74fe4edc2758996018aad1079d20b3",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Tools",
+    "included": false,
+    "sha256": "73a2f50d6efe3d7c596279b54c68c7bddef2ff537984802d94a450ab61f87eda",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Tools/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Cookies",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Cookies/best.pt",
+    "sha256": "7850b1e63f7fa724323d1bb6b77a63a04906b8a89759e69e6dd74572ed458edb",
+    "bytes": 489434
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Cookies",
+    "included": false,
+    "sha256": "6a75c382b9fcc54bc25a77bcbc39ecf780d63742f22e6e7df9458afb926a9d45",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Cookies/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Tapes",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Tapes/best.pt",
+    "sha256": "b2e51feff3a86cc38e413422ee082841b13699ee960fe518df9c26440deab373",
+    "bytes": 488282
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Tapes",
+    "included": false,
+    "sha256": "151e37c43e2c714ef796c773608d54d6b66df26e45a43e58df7221d53260d5a7",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Tapes/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Stationery",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Stationery/best.pt",
+    "sha256": "668fe36cb635a56edb7967f83956c5180b3ab62ad14b7e958c90060bbe2b75c3",
+    "bytes": 489434
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Stationery",
+    "included": false,
+    "sha256": "4598c27dc359c734e88747234d8e6a30c86963be814948168e90d10238cce0ca",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Stationery/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Ropes",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Ropes/best.pt",
+    "sha256": "8f7bbedeeb7e942ab27c9c90d59c53c5c4e2c7407633e72000d1a6fa2dbe411b",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Ropes",
+    "included": false,
+    "sha256": "8b0b4c9da7c960c47338cfe116dd5352e9f5d451a4c4edcb132f43fd44ce6f6a",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Ropes/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Blocks",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Blocks/best.pt",
+    "sha256": "b21890de78cecd5a9e3005b7bfd95b967a36aa704d9fe8ce997556396bf546ca",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Blocks",
+    "included": false,
+    "sha256": "dc5c2524a9ee0db2f128b2cba1c311a6525ff2d26d1953bbaa55749a38422b7c",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Blocks/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Dishes",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Dishes/best.pt",
+    "sha256": "ae965ad2bbe8196f13b0f37c7cf84bcea226bf3b53b83040e97d1a67530c48e2",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Dishes",
+    "included": false,
+    "sha256": "ec5592da2d70c8ac95a835912e668719808b17413d8bf6d24e365ebbb82b77dd",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Dishes/best.pt"
+  },
+  {
+    "role": "semantic_decoder",
+    "category": "Balls",
+    "included": true,
+    "path": "checkpoints/semantic_decoder/Balls/best.pt",
+    "sha256": "cd9a006a0417099ea71de88b515f269ad3f6e79ea4bccecad271b5b211905ff0",
+    "bytes": 488858
+  },
+  {
+    "role": "visual_frontend",
+    "category": "Balls",
+    "included": false,
+    "sha256": "0a0754138fbd816a5fa2aa82d783b66375972591b4bae8c3679e53c36925e456",
+    "status": "separate model asset; not distributed in this frozen-result release",
+    "path": "checkpoints/visual_frontend/Balls/best.pt"
+  }
+]

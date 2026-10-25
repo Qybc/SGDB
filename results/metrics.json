@@ -1,0 +1,362 @@
+[
+  {
+    "method": "ComAD*",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.8681704902786148,
+    "F1": 0.7054952199871795,
+    "normal_FPR": 0.05942936765856007,
+    "errors": 261
+  },
+  {
+    "method": "ComAD*",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.8360027123922973,
+    "F1": 0.7021546146963665,
+    "normal_FPR": 0.1472,
+    "errors": 2356
+  },
+  {
+    "method": "FMP-v1",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9501349274606687,
+    "F1": 0.9087782067556989,
+    "normal_FPR": 0.0035769349367869253,
+    "errors": 96
+  },
+  {
+    "method": "FMP-v1",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9133310016467184,
+    "F1": 0.8946536028890126,
+    "normal_FPR": 0.11800000000000001,
+    "errors": 1024
+  },
+  {
+    "method": "FMP-v1+ZL1",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9807559637176988,
+    "F1": 0.9353886259334141,
+    "normal_FPR": 0.008494967723672172,
+    "errors": 68
+  },
+  {
+    "method": "FMP-v1+ZL1",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9133310016467184,
+    "F1": 0.8946536028890126,
+    "normal_FPR": 0.11800000000000001,
+    "errors": 1024
+  },
+  {
+    "method": "LogiCo*",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9449159516657133,
+    "F1": 0.8783704790670697,
+    "normal_FPR": 0.042325435049590424,
+    "errors": 129
+  },
+  {
+    "method": "LogiCo*",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.7037866073055506,
+    "F1": 0.7013935841794199,
+    "normal_FPR": 0.4348,
+    "errors": 2611
+  },
+  {
+    "method": "LogicAD-FE-fast",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.5496182057741106,
+    "F1": 0.07746419435375765,
+    "normal_FPR": 0.030132908473439267,
+    "errors": 557
+  },
+  {
+    "method": "LogicAD-FE-fast",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.6394294711229239,
+    "F1": 0.31037092113593884,
+    "normal_FPR": 0.08959999999999999,
+    "errors": 4237
+  },
+  {
+    "method": "PUAD*",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.8881936421345179,
+    "F1": 0.7348073012771807,
+    "normal_FPR": 0.10373695405582199,
+    "errors": 238
+  },
+  {
+    "method": "PUAD*",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.621488952418575,
+    "F1": 0.5190470951295205,
+    "normal_FPR": 0.36,
+    "errors": 3562
+  },
+  {
+    "method": "Qwen3-VL-8B",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.7423272773689402,
+    "F1": 0.5073675387944017,
+    "normal_FPR": 0.06162005785920925,
+    "errors": 381
+  },
+  {
+    "method": "Qwen3-VL-8B",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.8844198920524958,
+    "F1": 0.7710569180598553,
+    "normal_FPR": 0.0656,
+    "errors": 1845
+  },
+  {
+    "method": "SALAD",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9641896461068484,
+    "F1": 0.86448107158001,
+    "normal_FPR": 0.11807357965402991,
+    "errors": 147
+  },
+  {
+    "method": "SALAD",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.6969505589706345,
+    "F1": 0.5894165254480005,
+    "normal_FPR": 0.364,
+    "errors": 3096
+  },
+  {
+    "method": "SGDB_V2",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9818606471014615,
+    "F1": 0.9452314544970044,
+    "normal_FPR": 0.014292069172947536,
+    "errors": 60
+  },
+  {
+    "method": "SGDB_V2",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.935556146755675,
+    "F1": 0.9276118120721836,
+    "normal_FPR": 0.11359999999999999,
+    "errors": 757
+  },
+  {
+    "method": "SGDB_V2_fixed_refs",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9818606471014615,
+    "F1": 0.9452314544970044,
+    "normal_FPR": 0.014292069172947536,
+    "errors": 60
+  },
+  {
+    "method": "SGDB_V2_fixed_refs",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.935556146755675,
+    "F1": 0.9276118120721836,
+    "normal_FPR": 0.11359999999999999,
+    "errors": 757
+  },
+  {
+    "method": "direct_evidence_edit",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9541990054947282,
+    "F1": 0.9240820327681284,
+    "normal_FPR": 0.009374036386062289,
+    "errors": 83
+  },
+  {
+    "method": "direct_evidence_edit",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9263875039104283,
+    "F1": 0.918338640773517,
+    "normal_FPR": 0.1116,
+    "errors": 841
+  },
+  {
+    "method": "direct_plain_set",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9501349274606687,
+    "F1": 0.9087782067556989,
+    "normal_FPR": 0.0035769349367869253,
+    "errors": 96
+  },
+  {
+    "method": "direct_plain_set",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9340556907554077,
+    "F1": 0.9177710008558777,
+    "normal_FPR": 0.1056,
+    "errors": 815
+  },
+  {
+    "method": "hybrid_plain_set",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9802362377550246,
+    "F1": 0.9353886259334141,
+    "normal_FPR": 0.008494967723672172,
+    "errors": 68
+  },
+  {
+    "method": "hybrid_plain_set",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9337828733365902,
+    "F1": 0.9174536030285744,
+    "normal_FPR": 0.1084,
+    "errors": 820
+  },
+  {
+    "method": "initial_bound",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9818606471014615,
+    "F1": 0.9452314544970044,
+    "normal_FPR": 0.014292069172947536,
+    "errors": 60
+  },
+  {
+    "method": "initial_bound",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9262579649374933,
+    "F1": 0.9178895928852873,
+    "normal_FPR": 0.11359999999999999,
+    "errors": 846
+  },
+  {
+    "method": "quality_only",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9662090975023231,
+    "F1": 0.9382388924258972,
+    "normal_FPR": 0.011013380648357371,
+    "errors": 68
+  },
+  {
+    "method": "quality_only",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9353816013011296,
+    "F1": 0.9276118120721836,
+    "normal_FPR": 0.11359999999999999,
+    "errors": 757
+  },
+  {
+    "method": "quality_only_fixed_refs",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.980358912029067,
+    "F1": 0.9424288740723451,
+    "normal_FPR": 0.020849446222127862,
+    "errors": 64
+  },
+  {
+    "method": "quality_only_fixed_refs",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9353816013011296,
+    "F1": 0.9276118120721836,
+    "normal_FPR": 0.11359999999999999,
+    "errors": 757
+  },
+  {
+    "method": "uniform_mask",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9635765738694404,
+    "F1": 0.9353949835087203,
+    "normal_FPR": 0.009374036386062289,
+    "errors": 71
+  },
+  {
+    "method": "uniform_mask",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9357543285738569,
+    "F1": 0.9286381088642695,
+    "normal_FPR": 0.11120000000000001,
+    "errors": 747
+  },
+  {
+    "method": "uniform_mask_fixed_refs",
+    "dataset": "LOCO",
+    "tasks": 5,
+    "n": 1136,
+    "AUROC": 0.9750998477715583,
+    "F1": 0.9339833869751726,
+    "normal_FPR": 0.0356035445827836,
+    "errors": 76
+  },
+  {
+    "method": "uniform_mask_fixed_refs",
+    "dataset": "VID-AD",
+    "tasks": 50,
+    "n": 7895,
+    "AUROC": 0.9358179649374933,
+    "F1": 0.9281162579821728,
+    "normal_FPR": 0.1124,
+    "errors": 752
+  }
+]

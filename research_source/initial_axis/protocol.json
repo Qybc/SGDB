@@ -1,0 +1,47 @@
+{
+  "method": "FMP-ZL1 axis-length readout; FMP-v1 immutable global anchor",
+  "scope": "Only screw_bag screw axis-length operands are replaced. All other categories, object fields, appearance and OCR stay frozen. This scope follows the existing typed length predicate and normal factual error diagnosis.",
+  "training": {
+    "new_optimizer_steps": 0,
+    "new_weights": false,
+    "original_budget": "Existing FMP-v1 40 epochs; normal fact annotation supervision retained"
+  },
+  "roles": {
+    "selection": [
+      "normal TRAIN240",
+      "normal DEV30"
+    ],
+    "independent_CAL": "original normal CAL60 after selection",
+    "testing": "LOCO logical5/1136 and VID full50/7895; old test used in prior development, not blind"
+  },
+  "candidates": [
+    {
+      "assignment": "components",
+      "trim": 0.0
+    },
+    {
+      "assignment": "components",
+      "trim": 0.01
+    },
+    {
+      "assignment": "box_voronoi",
+      "trim": 0.0
+    },
+    {
+      "assignment": "box_voronoi",
+      "trim": 0.01
+    }
+  ],
+  "geometry_guards": {
+    "min_area": 16,
+    "max_center_displacement": 0.04,
+    "expanded_box_fraction": 0.125,
+    "minimum_box_support": 0.75,
+    "native_PCA_eigenvalue_ratio_min": 4
+  },
+  "admission": "normal DEV mean relative native-axis-length error drops at least10%; median and p95 and number errors>20% do not increase; at least one update; identities/counts/centers/boxes/other axes bit identical",
+  "selection": "minimum DEV mean error; then p95; then preset candidate order",
+  "executor": "Original TRAINq1/q99 plus original normalDEV padding; original per-task TRAIN tail normalization; max+.01sum; independent CALp95(higher), strict score>threshold. No threshold or rule tuning.",
+  "fallback": "anchor if no candidate admitted; do not relax admission post hoc",
+  "created_unix": 1792395959.5226262
+}

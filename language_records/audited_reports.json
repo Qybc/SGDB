@@ -1,0 +1,2625 @@
+[
+  {
+    "request_id": "0902c9d597bb1d5ab25e88afbbd65930",
+    "source_id": "screw_bag/test/logical_anomalies/000.png",
+    "language": "en",
+    "pilot": true,
+    "score": 6.130061173823091,
+    "threshold": 4.4300464912707715,
+    "model_output": {
+      "state": "complete",
+      "request_id": "0902c9d597bb1d5ab25e88afbbd65930",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E05\"],\n      \"text\": \"The screw length exceeds the upper bound.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 46,
+      "batch_seconds": 2.4855365972034633,
+      "prompt_sha256": "ab512159f62a2eeef4d9726401440c689cd0d6d6aa4c1126dc6bd6a34ff1787d",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E05"
+        ],
+        "text": "The screw length exceeds the upper bound."
+      }
+    ],
+    "rendered_text": "The screw length exceeds the upper bound. [E05]",
+    "citations": [
+      "E05"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "e729f0376e41cf3bf97e2cede0e2c009",
+    "source_id": "screw_bag/test/logical_anomalies/000.png",
+    "language": "zh",
+    "pilot": true,
+    "score": 6.130061173823091,
+    "threshold": 4.4300464912707715,
+    "model_output": {
+      "state": "complete",
+      "request_id": "e729f0376e41cf3bf97e2cede0e2c009",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E05\"],\n      \"text\": \"短螺丝长度超出上限范围。\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 46,
+      "batch_seconds": 2.4861731030978262,
+      "prompt_sha256": "72526010379cb2dc4d3aa25dd12f6047541c04bf10ccbe932a734e0881e52abd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E05"
+        ],
+        "text": "短螺丝长度超出上限范围。"
+      }
+    ],
+    "rendered_text": "短螺丝长度超出上限范围。 [E05]",
+    "citations": [
+      "E05"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "e4f7307d7a6de9e69f7cca49c5555148",
+    "source_id": "Tools/test/logical_anomalies/Quantity/001.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 4.084967662100657,
+    "threshold": 1.6748103573695678,
+    "model_output": {
+      "state": "complete",
+      "request_id": "e4f7307d7a6de9e69f7cca49c5555148",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The bolt count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 47,
+      "batch_seconds": 2.0328317899256945,
+      "prompt_sha256": "df964b20f2aa576c9d2b687e9c7b1432b0d665080874fe55943a0f645e422ae1",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The bolt count is below the required count."
+      }
+    ],
+    "rendered_text": "The bolt count is below the required count. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "c88f608b2ff67f6a4ea659a46ff915b0",
+    "source_id": "Tools/test/logical_anomalies/Quantity/001.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 4.084967662100657,
+    "threshold": 1.6748103573695678,
+    "model_output": {
+      "state": "complete",
+      "request_id": "c88f608b2ff67f6a4ea659a46ff915b0",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"螺栓数量低于规定数量\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 45,
+      "batch_seconds": 2.0333478138782084,
+      "prompt_sha256": "6575ea54ab701d9913592948611af809c391ab49a84db838c7e11dd3a236b7a2",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "螺栓数量低于规定数量"
+      }
+    ],
+    "rendered_text": "螺栓数量低于规定数量 [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "72d827b69c85dcae2bb4f2771ce842be",
+    "source_id": "Cookies/test/logical_anomalies/Quantity/001.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "72d827b69c85dcae2bb4f2771ce842be",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria.\"\n    }\n  ]\n}",
+      "input_tokens": 392,
+      "generated_tokens": 77,
+      "batch_seconds": 3.3475534287281334,
+      "prompt_sha256": "cb1f7492b7353d40a001b739d44303f1758ba360be368b8fd46d27cf6ae6125b",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+      }
+    ],
+    "rendered_text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "7be95debd1ad62acd1250e06ffa5be4b",
+    "source_id": "Cookies/test/logical_anomalies/Quantity/001.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "7be95debd1ad62acd1250e06ffa5be4b",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"黄饼干、黑饼干、方盘和圆盘的数量均满足要求。\"\n    }\n  ]\n}",
+      "input_tokens": 394,
+      "generated_tokens": 70,
+      "batch_seconds": 3.3480766867287457,
+      "prompt_sha256": "833fe6c2a0d4bd3190b1a63f440a1e5631e21e34fffb75f408e3d4e2ab74eed7",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。"
+      }
+    ],
+    "rendered_text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。 [E01][E02][E03][E04]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "1163cd6e355c5d03dd103288676c8c59",
+    "source_id": "Tapes/test/logical_anomalies/Length/000.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 7.53937012851318,
+    "threshold": 4.125412886477891,
+    "model_output": {
+      "state": "complete",
+      "request_id": "1163cd6e355c5d03dd103288676c8c59",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+      "input_tokens": 293,
+      "generated_tokens": 49,
+      "batch_seconds": 2.1966490778140724,
+      "prompt_sha256": "1f3c664be253ba8a69f3e945af314644fe8f2de289fefd98bd3ebf30dd256ad0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "b5de5768bad9744a584c10d1a870d204",
+    "source_id": "Tapes/test/logical_anomalies/Length/000.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 7.53937012851318,
+    "threshold": 4.125412886477891,
+    "model_output": {
+      "state": "complete",
+      "request_id": "b5de5768bad9744a584c10d1a870d204",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"绿红胶带长度比低于下限阈值。\"\n    }\n  ]\n}",
+      "input_tokens": 298,
+      "generated_tokens": 51,
+      "batch_seconds": 2.197197494097054,
+      "prompt_sha256": "fcea8bd96705efb7e45a0c1c77373b03128a3c25f00b88afdebc555ca7e67416",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "绿红胶带长度比低于下限阈值。"
+      }
+    ],
+    "rendered_text": "绿红胶带长度比低于下限阈值。 [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "86c039cc367c6fb7d2ed091a362172f8",
+    "source_id": "Stationery_Blurry_CD/test/good/001.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "86c039cc367c6fb7d2ed091a362172f8",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied.\"\n    }\n  ]\n}",
+      "input_tokens": 394,
+      "generated_tokens": 74,
+      "batch_seconds": 3.225570143200457,
+      "prompt_sha256": "75c7d246f16c44f693123e7c182869f90d50cf69517cb91b790e13865ead59ef",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied."
+      }
+    ],
+    "rendered_text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied. [E01][E02][E03][E04]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "94f6fb1cccdfeb9f3af48258ef299b3d",
+    "source_id": "Stationery_Blurry_CD/test/good/001.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "94f6fb1cccdfeb9f3af48258ef299b3d",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"所有文具数量均符合要求。\"\n    }\n  ]\n}",
+      "input_tokens": 398,
+      "generated_tokens": 62,
+      "batch_seconds": 3.2260332540608943,
+      "prompt_sha256": "58ba5768adf1837661e80c9a49da62fe065c66d8b145403e2daecf2db9ab6951",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "所有文具数量均符合要求。"
+      }
+    ],
+    "rendered_text": "所有文具数量均符合要求。 [E01][E02][E03][E04]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "f2b91c16958574507488cc639bf576ca",
+    "source_id": "Dishes/test/logical_anomalies/Mix/000.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "f2b91c16958574507488cc639bf576ca",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 333,
+      "generated_tokens": 75,
+      "batch_seconds": 3.315763691905886,
+      "prompt_sha256": "24a9425194f80fb8f7df5028ceb5353a11a6cfcfa2afac2e6235327e18c53125",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "citations": [
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "7ddecb84f8568404ae75a0497b6acf4d",
+    "source_id": "Dishes/test/logical_anomalies/Mix/000.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "7ddecb84f8568404ae75a0497b6acf4d",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"勺子数量低于所需数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"餐具顺序信息缺失，导致测量不可用。\"\n    }\n  ]\n}",
+      "input_tokens": 334,
+      "generated_tokens": 77,
+      "batch_seconds": 3.3162467619404197,
+      "prompt_sha256": "22afb3602b5f6e686a0f1f66971ba0e95a36a39aa389adfc046929ed5b590987",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "勺子数量低于所需数量。"
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "餐具顺序信息缺失，导致测量不可用。"
+      }
+    ],
+    "rendered_text": "勺子数量低于所需数量。 [E03] 餐具顺序信息缺失，导致测量不可用。 [E04]",
+    "citations": [
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "b7d107cacc1e8967e5252154a7b26362",
+    "source_id": "Tapes/test/logical_anomalies/Type/016.jpg",
+    "language": "en",
+    "pilot": true,
+    "score": 4.165858110855125,
+    "threshold": 4.125412886477891,
+    "model_output": {
+      "state": "complete",
+      "request_id": "b7d107cacc1e8967e5252154a7b26362",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The green tape count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red tape count is above the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 365,
+      "generated_tokens": 106,
+      "batch_seconds": 4.685367192607373,
+      "prompt_sha256": "537dba38e5290fc3d02ce85d0af1b9264b303f058f2a59f8cf2118b3523dfa66",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The green tape count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red tape count is above the required count."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is unavailable."
+      }
+    ],
+    "rendered_text": "The green tape count is below the required count. [E01] The red tape count is above the required count. [E02] The green red length ratio is unavailable. [E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "68f48f781b0eeb368d1d4586477a27fc",
+    "source_id": "Tapes/test/logical_anomalies/Type/016.jpg",
+    "language": "zh",
+    "pilot": true,
+    "score": 4.165858110855125,
+    "threshold": 4.125412886477891,
+    "model_output": {
+      "state": "complete",
+      "request_id": "68f48f781b0eeb368d1d4586477a27fc",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"绿胶带数量低于规定数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"红胶带数量超出规定数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"测量数据缺失，无法获取绿红胶带长度比。\"\n    }\n  ]\n}",
+      "input_tokens": 373,
+      "generated_tokens": 110,
+      "batch_seconds": 4.685879118740559,
+      "prompt_sha256": "6aeccd37285d5094cc730bf02c4bd8a17f09ea5f3784b7133762382c90606c00",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "绿胶带数量低于规定数量。"
+      },
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "红胶带数量超出规定数量。"
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "测量数据缺失，无法获取绿红胶带长度比。"
+      }
+    ],
+    "rendered_text": "绿胶带数量低于规定数量。 [E01] 红胶带数量超出规定数量。 [E02] 测量数据缺失，无法获取绿红胶带长度比。 [E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "82dd7fda20e73daac7f7eecfc191b05c",
+    "source_id": "Balls/test/good/035.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 2.398402762306747,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "82dd7fda20e73daac7f7eecfc191b05c",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"Cell occupancy shows a deviation from the required zero error.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 49,
+      "batch_seconds": 1.9307140428572893,
+      "prompt_sha256": "550e956f2c7a54a561c9a430e79b8a626d3f5b8e39834370ededae9d315021c7",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "Cell occupancy shows a deviation from the required zero error."
+      }
+    ],
+    "rendered_text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+    "citations": [
+      "E06"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "e7b2780e0ec405670b49719c9af3b4a7",
+    "source_id": "Balls_Blurry_CD/test/logical_anomalies/Relation/002.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.140947093651882,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "e7b2780e0ec405670b49719c9af3b4a7",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"Cell occupancy shows a deviation from the required zero error.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 49,
+      "batch_seconds": 1.9311963422223926,
+      "prompt_sha256": "550e956f2c7a54a561c9a430e79b8a626d3f5b8e39834370ededae9d315021c7",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "Cell occupancy shows a deviation from the required zero error."
+      }
+    ],
+    "rendered_text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+    "citations": [
+      "E06"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "5e577997bb06233cf3e24c14d0d9c90b",
+    "source_id": "Balls_Cable_BG/test/logical_anomalies/Placement/018.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 3.126463342959946,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "5e577997bb06233cf3e24c14d0d9c90b",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The color row order margin deviates from the requirement.\"\n    }\n  ]\n}",
+      "input_tokens": 295,
+      "generated_tokens": 49,
+      "batch_seconds": 1.92028326401487,
+      "prompt_sha256": "4481b2a842c8e7cf1aff571d20bcb39a1e9898ad6175218f048a2f98ff651e8a",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The color row order margin deviates from the requirement."
+      }
+    ],
+    "rendered_text": "The color row order margin deviates from the requirement. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "9d2044af0d2385921957145477cc7225",
+    "source_id": "Balls_Low-light_CD/test/logical_anomalies/Relation/027.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 3.4018130114762526,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "9d2044af0d2385921957145477cc7225",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The color row order margin deviates from the requirement.\"\n    }\n  ]\n}",
+      "input_tokens": 295,
+      "generated_tokens": 49,
+      "batch_seconds": 1.9207341228611767,
+      "prompt_sha256": "4481b2a842c8e7cf1aff571d20bcb39a1e9898ad6175218f048a2f98ff651e8a",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The color row order margin deviates from the requirement."
+      }
+    ],
+    "rendered_text": "The color row order margin deviates from the requirement. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a4f8d4067a007805c8916d84690f4177",
+    "source_id": "Balls_Mesh_BG/test/good/049.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a4f8d4067a007805c8916d84690f4177",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 66,
+      "batch_seconds": 2.8827371448278427,
+      "prompt_sha256": "67e448d8e462d6f2d725e509d3d2f8986dd1545da183c9459fac98365362869b",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "5ed40dfa283a772f1490d33bead38dbd",
+    "source_id": "Blocks/test/logical_anomalies/Placement/049.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.145412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "5ed40dfa283a772f1490d33bead38dbd",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The circle block bin deviates from the requirement.\"\n    }\n  ]\n}",
+      "input_tokens": 295,
+      "generated_tokens": 48,
+      "batch_seconds": 2.8832205459475517,
+      "prompt_sha256": "30057fb113bbe21021c118b70b045621e70a88865c04b5895ea331ecb3a713ee",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The circle block bin deviates from the requirement."
+      }
+    ],
+    "rendered_text": "The circle block bin deviates from the requirement. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "1310b5b322309e3cba4922e4ef17d36d",
+    "source_id": "Blocks_Blurry_CD/test/good/014.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "1310b5b322309e3cba4922e4ef17d36d",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.5383978062309325,
+      "prompt_sha256": "796619bfb09810abb989930730a7a14f5fd201955e5826f12feebb9dfcfd1452",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "3459ac1591cb7b9d242038947b3ada69",
+    "source_id": "Blocks_Cable_BG/test/logical_anomalies/Type/010.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "3459ac1591cb7b9d242038947b3ada69",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.538880205247551,
+      "prompt_sha256": "796619bfb09810abb989930730a7a14f5fd201955e5826f12feebb9dfcfd1452",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "f7cac7fa3734cc4f84787e109768f6d4",
+    "source_id": "Blocks_Low-light_CD/test/good/045.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "f7cac7fa3734cc4f84787e109768f6d4",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.5432801600545645,
+      "prompt_sha256": "796619bfb09810abb989930730a7a14f5fd201955e5826f12feebb9dfcfd1452",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "c19bbe897dc3665c3048dd720b51da28",
+    "source_id": "Blocks_Mesh_BG/test/good/049.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "c19bbe897dc3665c3048dd720b51da28",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.5437613669782877,
+      "prompt_sha256": "796619bfb09810abb989930730a7a14f5fd201955e5826f12feebb9dfcfd1452",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "be82f07692f45c2d405d2865d56f2b8e",
+    "source_id": "Cookies/test/logical_anomalies/Quantity/004.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "be82f07692f45c2d405d2865d56f2b8e",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The black cookie count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 47,
+      "batch_seconds": 1.8510394818149507,
+      "prompt_sha256": "0c832f5ec0591ae1e093d84904d469afb9c558dc0368ae9250016fc71df24643",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The black cookie count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The black cookie count exceeds the required amount. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "6a1d19b5d3c5a3f84bbcbc7dbed342ec",
+    "source_id": "Cookies_Blurry_CD/test/good/036.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 2.3748890097351123,
+    "model_output": {
+      "state": "complete",
+      "request_id": "6a1d19b5d3c5a3f84bbcbc7dbed342ec",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The round dish count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 47,
+      "batch_seconds": 1.851494729053229,
+      "prompt_sha256": "7dbf39350ea8c0074accaca2a72f2b56f94519e21a974d16116645129bea7b57",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The round dish count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The round dish count exceeds the required amount. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "d48f342871ce7929c08235c15dfc43a4",
+    "source_id": "Cookies_Cable_BG/test/logical_anomalies/Quantity/008.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "d48f342871ce7929c08235c15dfc43a4",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The yellow cookie count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 48,
+      "batch_seconds": 1.8881331142038107,
+      "prompt_sha256": "408267ba773edf347cf0ef5458f1f0440b2a3273ce6e86e9d654b38757ca68c0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The yellow cookie count is below the required count."
+      }
+    ],
+    "rendered_text": "The yellow cookie count is below the required count. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "49ff650e7bbb3584bc584c7005294381",
+    "source_id": "Cookies_Low-light_CD/test/logical_anomalies/Relation/009.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.21289770655322,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "49ff650e7bbb3584bc584c7005294381",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The black cookie count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 47,
+      "batch_seconds": 1.8886401713825762,
+      "prompt_sha256": "0c832f5ec0591ae1e093d84904d469afb9c558dc0368ae9250016fc71df24643",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The black cookie count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The black cookie count exceeds the required amount. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "bb5e0b55e24237aec341b0ce8cf3a503",
+    "source_id": "Cookies_Mesh_BG/test/logical_anomalies/Quantity/002.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "bb5e0b55e24237aec341b0ce8cf3a503",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria.\"\n    }\n  ]\n}",
+      "input_tokens": 392,
+      "generated_tokens": 77,
+      "batch_seconds": 3.340338131878525,
+      "prompt_sha256": "cb1f7492b7353d40a001b739d44303f1758ba360be368b8fd46d27cf6ae6125b",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+      }
+    ],
+    "rendered_text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "f6d7931f767c51a01fc2753b144bd093",
+    "source_id": "Dishes/test/good/025.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "f6d7931f767c51a01fc2753b144bd093",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The fork, plate, and spoon counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 357,
+      "generated_tokens": 62,
+      "batch_seconds": 3.340810681693256,
+      "prompt_sha256": "a217406377d282dd79f8d7765550d814052347e30221632e293f1de48e11c2c9",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The fork, plate, and spoon counts all satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The fork, plate, and spoon counts all satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "f1844d6e74434f344fbaa5c04072f488",
+    "source_id": "Dishes_Blurry_CD/test/good/004.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "f1844d6e74434f344fbaa5c04072f488",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 333,
+      "generated_tokens": 75,
+      "batch_seconds": 3.2480595856904984,
+      "prompt_sha256": "24a9425194f80fb8f7df5028ceb5353a11a6cfcfa2afac2e6235327e18c53125",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "citations": [
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a1d7ae1d0be19f0290410fe5f717723b",
+    "source_id": "Dishes_Cable_BG/test/logical_anomalies/Type/033.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 2.4178618637973,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a1d7ae1d0be19f0290410fe5f717723b",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The fork count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement for utensil order is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 332,
+      "generated_tokens": 76,
+      "batch_seconds": 3.248542966786772,
+      "prompt_sha256": "6b5dde8b1ebb91be33cc3b7aa6ae9791cb020f2e67683d015a5f232ba2a11408",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The fork count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement for utensil order is unavailable."
+      }
+    ],
+    "rendered_text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+    "citations": [
+      "E01",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "ccb0dbd2fb9e7a72a88e42301fa87972",
+    "source_id": "Dishes_Low-light_CD/test/logical_anomalies/Type/026.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "ccb0dbd2fb9e7a72a88e42301fa87972",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 333,
+      "generated_tokens": 75,
+      "batch_seconds": 3.2499380842782557,
+      "prompt_sha256": "24a9425194f80fb8f7df5028ceb5353a11a6cfcfa2afac2e6235327e18c53125",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "citations": [
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "cfeeb1cdc8115207a1029201227291ac",
+    "source_id": "Dishes_Mesh_BG/test/logical_anomalies/Relation/033.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "cfeeb1cdc8115207a1029201227291ac",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The fork count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement for utensil order is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 332,
+      "generated_tokens": 76,
+      "batch_seconds": 3.2504257140681148,
+      "prompt_sha256": "6b5dde8b1ebb91be33cc3b7aa6ae9791cb020f2e67683d015a5f232ba2a11408",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The fork count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement for utensil order is unavailable."
+      }
+    ],
+    "rendered_text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+    "citations": [
+      "E01",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a97102b03b326417f7510f1f18110163",
+    "source_id": "Fruits/test/logical_anomalies/Quantity/037.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a97102b03b326417f7510f1f18110163",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The kiwifruit count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 49,
+      "batch_seconds": 2.1006112708710134,
+      "prompt_sha256": "fd8bc3cdc08a71311e30c7d1b860f190e58c06ec5296ad1af337c44412f38dd3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The kiwifruit count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The kiwifruit count exceeds the required amount. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "eefb5d06ddec8ca2f7ec71e056bc5878",
+    "source_id": "Fruits_Blurry_CD/test/logical_anomalies/Quantity/025.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "eefb5d06ddec8ca2f7ec71e056bc5878",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The orange count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 46,
+      "batch_seconds": 2.1010697539895773,
+      "prompt_sha256": "5377fb72a4e9be5d1e3df50d4c4d344fd04f6062fe7d2854784396be872216eb",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The orange count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The orange count exceeds the required amount. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "9f1ae81548da8f55518fc3c38f054f4d",
+    "source_id": "Fruits_Cable_BG/test/logical_anomalies/Quantity/026.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "9f1ae81548da8f55518fc3c38f054f4d",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The orange count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 46,
+      "batch_seconds": 2.0985641293227673,
+      "prompt_sha256": "5377fb72a4e9be5d1e3df50d4c4d344fd04f6062fe7d2854784396be872216eb",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The orange count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The orange count exceeds the required amount. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "ac7d64ed3b7212a59b93364148dc777d",
+    "source_id": "Fruits_Low-light_CD/test/logical_anomalies/Quantity/047.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.145412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "ac7d64ed3b7212a59b93364148dc777d",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The kiwifruit count exceeds the required amount.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 49,
+      "batch_seconds": 2.0990214701741934,
+      "prompt_sha256": "fd8bc3cdc08a71311e30c7d1b860f190e58c06ec5296ad1af337c44412f38dd3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The kiwifruit count exceeds the required amount."
+      }
+    ],
+    "rendered_text": "The kiwifruit count exceeds the required amount. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "737496dc3703385ecd3beb70a3bb73da",
+    "source_id": "Fruits_Mesh_BG/test/logical_anomalies/Type/015.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "737496dc3703385ecd3beb70a3bb73da",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The orange and kiwifruit counts both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 327,
+      "generated_tokens": 57,
+      "batch_seconds": 2.7626946857199073,
+      "prompt_sha256": "e0ac5de9c65808e3513ca7d73160ebcd1250c7e98818855686133610e8887281",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The orange and kiwifruit counts both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The orange and kiwifruit counts both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "ea0ed3a54e6af461273d21f4d5e6018b",
+    "source_id": "Ropes/test/logical_anomalies/Length/014.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "ea0ed3a54e6af461273d21f4d5e6018b",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.7631784877739847,
+      "prompt_sha256": "e3e81a71416da4ae0afa9bcc13695964ef2bb469c485272df9246d6b3831dbf3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "4dc4104993589df63b185071789fb493",
+    "source_id": "Ropes_Blurry_CD/test/logical_anomalies/Length/028.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 3.4688554022672418,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "4dc4104993589df63b185071789fb493",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The rope reference length ratio exceeds its upper bound.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 48,
+      "batch_seconds": 2.765182717703283,
+      "prompt_sha256": "51b0ea74861952f217699fe09b36bb223943d738237e6d072614dd081add1a46",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The rope reference length ratio exceeds its upper bound."
+      }
+    ],
+    "rendered_text": "The rope reference length ratio exceeds its upper bound. [E06]",
+    "citations": [
+      "E06"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a56af2691c510492e469f958bd093e3d",
+    "source_id": "Ropes_Cable_BG/test/good/020.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 1.9653692505458666,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a56af2691c510492e469f958bd093e3d",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.7657104837708175,
+      "prompt_sha256": "e3e81a71416da4ae0afa9bcc13695964ef2bb469c485272df9246d6b3831dbf3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a079d0d75614be8f0af90175d16bc250",
+    "source_id": "Ropes_Low-light_CD/test/logical_anomalies/Length/045.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a079d0d75614be8f0af90175d16bc250",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.5068327533081174,
+      "prompt_sha256": "e3e81a71416da4ae0afa9bcc13695964ef2bb469c485272df9246d6b3831dbf3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "307c80af36b3dd5d37e3250798e346f1",
+    "source_id": "Ropes_Mesh_BG/test/logical_anomalies/Length/044.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "307c80af36b3dd5d37e3250798e346f1",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 359,
+      "generated_tokens": 64,
+      "batch_seconds": 2.5072882501408458,
+      "prompt_sha256": "e3e81a71416da4ae0afa9bcc13695964ef2bb469c485272df9246d6b3831dbf3",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "citations": [
+      "E01",
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "68485104023613e8b02f495ba630f55c",
+    "source_id": "Stationery/test/logical_anomalies/Placement/044.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "68485104023613e8b02f495ba630f55c",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E09\"],\n      \"text\": \"The blue eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+      "input_tokens": 296,
+      "generated_tokens": 59,
+      "batch_seconds": 2.500532018020749,
+      "prompt_sha256": "199439bf8eeff0cb045d1fed41eb54a775a391cdbbd0076188f141ba2c2b6a13",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E09"
+        ],
+        "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "rendered_text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+    "citations": [
+      "E09"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "a1aa16a6975c50940c7995d2b2f1e553",
+    "source_id": "Stationery_Blurry_CD/test/logical_anomalies/Mix/004.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.521715199755132,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "a1aa16a6975c50940c7995d2b2f1e553",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E12\"],\n      \"text\": \"The pencil length ratio is below the lower bound.\"\n    }\n  ]\n}",
+      "input_tokens": 293,
+      "generated_tokens": 48,
+      "batch_seconds": 2.500999368261546,
+      "prompt_sha256": "d848dc9f85ec849f446eee2acf56054bc5f23d4636f071d0163966f6ba13b44c",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E12"
+        ],
+        "text": "The pencil length ratio is below the lower bound."
+      }
+    ],
+    "rendered_text": "The pencil length ratio is below the lower bound. [E12]",
+    "citations": [
+      "E12"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "25ad0c1bba1565479aa6526070b7178b",
+    "source_id": "Stationery_Cable_BG/test/logical_anomalies/Placement/025.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "25ad0c1bba1565479aa6526070b7178b",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E10\"],\n      \"text\": \"The red eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+      "input_tokens": 296,
+      "generated_tokens": 59,
+      "batch_seconds": 2.272093892097473,
+      "prompt_sha256": "c915b64b56dafb7a146d04259e0c559588c913cd8c3556a8e06ae3d090ab13a0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E10"
+        ],
+        "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "rendered_text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+    "citations": [
+      "E10"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "6b0a26d6f9885c29544baea2b0130b3d",
+    "source_id": "Stationery_Low-light_CD/test/logical_anomalies/Placement/024.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "6b0a26d6f9885c29544baea2b0130b3d",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E10\"],\n      \"text\": \"The red eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+      "input_tokens": 296,
+      "generated_tokens": 59,
+      "batch_seconds": 2.2725855987519026,
+      "prompt_sha256": "c915b64b56dafb7a146d04259e0c559588c913cd8c3556a8e06ae3d090ab13a0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E10"
+        ],
+        "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "rendered_text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+    "citations": [
+      "E10"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "65115dc24bb07414b686608d48c442ff",
+    "source_id": "Stationery_Mesh_BG/test/logical_anomalies/Placement/041.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.125412886477891,
+    "threshold": 2.3748890097351123,
+    "model_output": {
+      "state": "complete",
+      "request_id": "65115dc24bb07414b686608d48c442ff",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E09\"],\n      \"text\": \"The blue eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+      "input_tokens": 296,
+      "generated_tokens": 59,
+      "batch_seconds": 2.5642843330278993,
+      "prompt_sha256": "199439bf8eeff0cb045d1fed41eb54a775a391cdbbd0076188f141ba2c2b6a13",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E09"
+        ],
+        "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "rendered_text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+    "citations": [
+      "E09"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "487ca7b854708b9714f446e5257b893a",
+    "source_id": "Sticks/test/good/034.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "487ca7b854708b9714f446e5257b893a",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 326,
+      "generated_tokens": 57,
+      "batch_seconds": 2.564840544015169,
+      "prompt_sha256": "29a31217053fb7a4232a46c2c6fba43cd1c2c8c599bb3385e36cc1cc336d1bbd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "65b6fe60011e681e09c29cc6663371bf",
+    "source_id": "Sticks_Blurry_CD/test/good/048.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 3.487468480239995,
+    "model_output": {
+      "state": "complete",
+      "request_id": "65b6fe60011e681e09c29cc6663371bf",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 326,
+      "generated_tokens": 57,
+      "batch_seconds": 2.2614860222674906,
+      "prompt_sha256": "29a31217053fb7a4232a46c2c6fba43cd1c2c8c599bb3385e36cc1cc336d1bbd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "af7d652e07c7eb25240fc611af70751e",
+    "source_id": "Sticks_Cable_BG/test/good/049.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "af7d652e07c7eb25240fc611af70751e",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 326,
+      "generated_tokens": 57,
+      "batch_seconds": 2.2619515480473638,
+      "prompt_sha256": "29a31217053fb7a4232a46c2c6fba43cd1c2c8c599bb3385e36cc1cc336d1bbd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "7e5176706958a752bc296ea903415c74",
+    "source_id": "Sticks_Low-light_CD/test/logical_anomalies/Length/046.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 7.155412886477891,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "7e5176706958a752bc296ea903415c74",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red stick count exceeds the required amount.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The blue red length ratio is missing, making the measurement unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 333,
+      "generated_tokens": 80,
+      "batch_seconds": 3.4158818079158664,
+      "prompt_sha256": "09835f2f701dde84953d4b6f22656d0535e88d97e66eb64659787f70f5ebd0bd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red stick count exceeds the required amount."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The blue red length ratio is missing, making the measurement unavailable."
+      }
+    ],
+    "rendered_text": "The red stick count exceeds the required amount. [E02] The blue red length ratio is missing, making the measurement unavailable. [E03]",
+    "citations": [
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "e880d4e546a9c5cf984105553ba781fc",
+    "source_id": "Sticks_Mesh_BG/test/good/001.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "e880d4e546a9c5cf984105553ba781fc",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 326,
+      "generated_tokens": 57,
+      "batch_seconds": 3.4163571428507566,
+      "prompt_sha256": "29a31217053fb7a4232a46c2c6fba43cd1c2c8c599bb3385e36cc1cc336d1bbd",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "edfabab3b62f9a25ec5bc686a093f231",
+    "source_id": "Tapes_Blurry_CD/test/logical_anomalies/Type/004.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.141995167243926,
+    "threshold": 2.398402762306747,
+    "model_output": {
+      "state": "complete",
+      "request_id": "edfabab3b62f9a25ec5bc686a093f231",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red tape count exceeds the required amount.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is missing, preventing verification.\"\n    }\n  ]\n}",
+      "input_tokens": 333,
+      "generated_tokens": 78,
+      "batch_seconds": 3.3439443982206285,
+      "prompt_sha256": "5dafa3957a91be4b9ac7aa7032b77088293ddeb9dc51987b96fd9543c731af72",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red tape count exceeds the required amount."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is missing, preventing verification."
+      }
+    ],
+    "rendered_text": "The red tape count exceeds the required amount. [E02] The green red length ratio is missing, preventing verification. [E03]",
+    "citations": [
+      "E02",
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "bcabde0a23fc2ade109f1538ea7b1636",
+    "source_id": "Tapes_Cable_BG/test/logical_anomalies/Length/011.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 7.442298762772097,
+    "threshold": 1.9848283520364198,
+    "model_output": {
+      "state": "complete",
+      "request_id": "bcabde0a23fc2ade109f1538ea7b1636",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+      "input_tokens": 293,
+      "generated_tokens": 49,
+      "batch_seconds": 3.3444171180017292,
+      "prompt_sha256": "1f3c664be253ba8a69f3e945af314644fe8f2de289fefd98bd3ebf30dd256ad0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "4e605fb80ff38b0086a5554df3946276",
+    "source_id": "Tapes_Low-light_CD/test/logical_anomalies/Length/008.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 7.481155118554468,
+    "threshold": 1.691392638135603,
+    "model_output": {
+      "state": "complete",
+      "request_id": "4e605fb80ff38b0086a5554df3946276",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+      "input_tokens": 293,
+      "generated_tokens": 49,
+      "batch_seconds": 1.9060511942952871,
+      "prompt_sha256": "1f3c664be253ba8a69f3e945af314644fe8f2de289fefd98bd3ebf30dd256ad0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "4b0000504ec3766f3e6055627b22114f",
+    "source_id": "Tapes_Mesh_BG/test/logical_anomalies/Length/015.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 7.351303384628905,
+    "threshold": 1.691392638135603,
+    "model_output": {
+      "state": "complete",
+      "request_id": "4b0000504ec3766f3e6055627b22114f",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+      "input_tokens": 293,
+      "generated_tokens": 49,
+      "batch_seconds": 1.9065192961134017,
+      "prompt_sha256": "1f3c664be253ba8a69f3e945af314644fe8f2de289fefd98bd3ebf30dd256ad0",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "fd12e84e65a76dbd788840878b3f48b5",
+    "source_id": "Tools/test/logical_anomalies/Quantity/019.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.151995167243927,
+    "threshold": 1.6748103573695678,
+    "model_output": {
+      "state": "complete",
+      "request_id": "fd12e84e65a76dbd788840878b3f48b5",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The nut count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 47,
+      "batch_seconds": 1.8377427929081023,
+      "prompt_sha256": "a124a3173929bfd3f59294574efbfc03d0a4e10cecaa2698c690b935a69e7e1e",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The nut count is below the required count."
+      }
+    ],
+    "rendered_text": "The nut count is below the required count. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "bfd4861f8e7e5f15415b7974426caf83",
+    "source_id": "Tools_Blurry_CD/test/logical_anomalies/Quantity/023.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.165858110855125,
+    "threshold": 1.9653692505458666,
+    "model_output": {
+      "state": "complete",
+      "request_id": "bfd4861f8e7e5f15415b7974426caf83",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The bolt count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 47,
+      "batch_seconds": 1.8382152230478823,
+      "prompt_sha256": "df964b20f2aa576c9d2b687e9c7b1432b0d665080874fe55943a0f645e422ae1",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The bolt count is below the required count."
+      }
+    ],
+    "rendered_text": "The bolt count is below the required count. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "184e837fd4274df64fd48e1540ba4715",
+    "source_id": "Tools_Cable_BG/test/logical_anomalies/Placement/039.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.195858110855125,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "184e837fd4274df64fd48e1540ba4715",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The bolt bin deviates from the requirement as every half-open condition is not satisfied.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 55,
+      "batch_seconds": 2.123544289264828,
+      "prompt_sha256": "b7602e5fe92edaad24f8a876e2cfe06e93f08bf7e0687f307cf775cc5bb8ae77",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+      }
+    ],
+    "rendered_text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "1e23bdea485a206107e7dce518f43027",
+    "source_id": "Tools_Low-light_CD/test/logical_anomalies/Placement/011.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 5.195858110855125,
+    "threshold": 1.6748103573695678,
+    "model_output": {
+      "state": "complete",
+      "request_id": "1e23bdea485a206107e7dce518f43027",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The bolt bin deviates from the requirement as every half-open condition is not satisfied.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 55,
+      "batch_seconds": 2.1239997763186693,
+      "prompt_sha256": "b7602e5fe92edaad24f8a876e2cfe06e93f08bf7e0687f307cf775cc5bb8ae77",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+      }
+    ],
+    "rendered_text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+    "citations": [
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "2a106725318564c2d81bddc4547cc25b",
+    "source_id": "Tools_Mesh_BG/test/logical_anomalies/Quantity/036.jpg",
+    "language": "en",
+    "pilot": false,
+    "score": 4.084967662100657,
+    "threshold": 1.9653692505458666,
+    "model_output": {
+      "state": "complete",
+      "request_id": "2a106725318564c2d81bddc4547cc25b",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The washer count is equal to the required count, which is an anomaly.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 53,
+      "batch_seconds": 2.455213025212288,
+      "prompt_sha256": "f0c89fa0efe2bbe9d98a8395e22428d9f31d09190c5542468ff9f7e44da9be95",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The washer count is equal to the required count, which is an anomaly."
+      }
+    ],
+    "rendered_text": "The washer count is equal to the required count, which is an anomaly. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "5db90aa39097926f60cb4ca3787fb6e5",
+    "source_id": "breakfast_box/test/good/001.png",
+    "language": "en",
+    "pilot": false,
+    "score": 0.0,
+    "threshold": 5.530259349771422,
+    "model_output": {
+      "state": "complete",
+      "request_id": "5db90aa39097926f60cb4ca3787fb6e5",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The tangerine and peach counts both satisfy their respective requirements.\"\n    }\n  ]\n}",
+      "input_tokens": 327,
+      "generated_tokens": 56,
+      "batch_seconds": 2.455686145927757,
+      "prompt_sha256": "710150773064f9f4525d57faec2cef2568586a947ec204557d4a7f9632c6b5e1",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The tangerine and peach counts both satisfy their respective requirements."
+      }
+    ],
+    "rendered_text": "The tangerine and peach counts both satisfy their respective requirements. [E01][E02]",
+    "citations": [
+      "E01",
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "3bc67c598953c10362c3dbef3f12cedc",
+    "source_id": "juice_bottle/test/logical_anomalies/121.png",
+    "language": "en",
+    "pilot": false,
+    "score": 6.4802614062264645,
+    "threshold": 0.0,
+    "model_output": {
+      "state": "complete",
+      "request_id": "3bc67c598953c10362c3dbef3f12cedc",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The juice icon does not correspond as required.\"\n    }\n  ]\n}",
+      "input_tokens": 295,
+      "generated_tokens": 47,
+      "batch_seconds": 2.0638871523551643,
+      "prompt_sha256": "6cb3f82de197e9090061b50816e323d0f726e56b42f66001ff5dd2b62864b9f2",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The juice icon does not correspond as required."
+      }
+    ],
+    "rendered_text": "The juice icon does not correspond as required. [E06]",
+    "citations": [
+      "E06"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "8f8ce7ffa9dbdd282fd68e122f65aa89",
+    "source_id": "pushpins/test/logical_anomalies/052.png",
+    "language": "en",
+    "pilot": false,
+    "score": 6.678836790452082,
+    "threshold": 3.6072581748834884,
+    "model_output": {
+      "state": "complete",
+      "request_id": "8f8ce7ffa9dbdd282fd68e122f65aa89",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The pushpin count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 292,
+      "generated_tokens": 48,
+      "batch_seconds": 2.064359071198851,
+      "prompt_sha256": "e57f463a2ff126b46bc9e207d8231b3dd2102ed25b709049ce901a5ae0e9914a",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The pushpin count is below the required count."
+      }
+    ],
+    "rendered_text": "The pushpin count is below the required count. [E01]",
+    "citations": [
+      "E01"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "e2dce14673603cd2ec40f95538be7dec",
+    "source_id": "screw_bag/test/logical_anomalies/106.png",
+    "language": "en",
+    "pilot": false,
+    "score": 6.614492872160468,
+    "threshold": 4.4300464912707715,
+    "model_output": {
+      "state": "complete",
+      "request_id": "e2dce14673603cd2ec40f95538be7dec",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The screw count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement is unavailable due to missing long screw length and short screw length values.\"\n    }\n  ]\n}",
+      "input_tokens": 337,
+      "generated_tokens": 83,
+      "batch_seconds": 3.548839050345123,
+      "prompt_sha256": "b8376f4df7d88d49bdfce32d700094d747565a559a08d6979c94dfcbaaa6a7c8",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The screw count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement is unavailable due to missing long screw length and short screw length values."
+      }
+    ],
+    "rendered_text": "The screw count is below the required count. [E03] The measurement is unavailable due to missing long screw length and short screw length values. [E04]",
+    "citations": [
+      "E03",
+      "E04"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "2a457a80471fcdaaf2b5a0c88edd62e4",
+    "source_id": "splicing_connectors/test/logical_anomalies/016.png",
+    "language": "en",
+    "pilot": false,
+    "score": 8.600729964258223,
+    "threshold": 4.417394968853399,
+    "model_output": {
+      "state": "complete",
+      "request_id": "2a457a80471fcdaaf2b5a0c88edd62e4",
+      "raw_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The color port count deviates from the required specification.\"\n    }\n  ]\n}",
+      "input_tokens": 294,
+      "generated_tokens": 49,
+      "batch_seconds": 3.5493258270435035,
+      "prompt_sha256": "c604612ff35f3a26eb7e21ced0697723eeda18fe40093e5bb417e798e727b1b6",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "anomaly",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The color port count deviates from the required specification."
+      }
+    ],
+    "rendered_text": "The color port count deviates from the required specification. [E03]",
+    "citations": [
+      "E03"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "cf2d5fb8d2f77e1c60edd645c146b7a6",
+    "source_id": "pushpins/test/good/078.png",
+    "language": "en",
+    "pilot": false,
+    "score": 3.6072581748834884,
+    "threshold": 3.6072581748834884,
+    "model_output": {
+      "state": "complete",
+      "request_id": "cf2d5fb8d2f77e1c60edd645c146b7a6",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The separator minimum contrast measurement is unavailable.\"\n    }\n  ]\n}",
+      "input_tokens": 300,
+      "generated_tokens": 46,
+      "batch_seconds": 2.027320375200361,
+      "prompt_sha256": "20437e363da08c5f5c040ad3f3320cf2eb9cb8105bf8ed199e807553fab3cc6b",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The separator minimum contrast measurement is unavailable."
+      }
+    ],
+    "rendered_text": "The separator minimum contrast measurement is unavailable. [E06]",
+    "citations": [
+      "E06"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  },
+  {
+    "request_id": "7b3f86b2040fe368b3c7867c40d0d367",
+    "source_id": "screw_bag/test/logical_anomalies/071.png",
+    "language": "en",
+    "pilot": false,
+    "score": 3.1177706772992075,
+    "threshold": 4.4300464912707715,
+    "model_output": {
+      "state": "complete",
+      "request_id": "7b3f86b2040fe368b3c7867c40d0d367",
+      "raw_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The washer count is below the required count.\"\n    }\n  ]\n}",
+      "input_tokens": 291,
+      "generated_tokens": 47,
+      "batch_seconds": 2.027789429295808,
+      "prompt_sha256": "78f9d1233bafe28ffd40b76324a81b4ee70bee29a7cef7c17191a9a661926c20",
+      "optimizer_steps": 0,
+      "text_only": true
+    },
+    "valid": true,
+    "errors": [],
+    "decision": "no_alarm",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The washer count is below the required count."
+      }
+    ],
+    "rendered_text": "The washer count is below the required count. [E02]",
+    "citations": [
+      "E02"
+    ],
+    "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "status": "passed",
+  "deployment": "complete_support V2",
+  "counts": {
+    "records": 9031,
+    "rules": 66297,
+    "alarm": 5725,
+    "normal": 3306,
+    "records_with_unknown": 1254,
+    "normal_with_unknown": 94,
+    "normal_with_raw_deviation": 191,
+    "correct_predictions": 8214,
+    "wrong_predictions": 817,
+    "cited_evidence": 15994,
+    "rules_with_object_sources": 47995,
+    "geometry_update_evidence_nodes": 17975,
+    "certificate_size_1": 5708,
+    "certificate_size_3": 17
+  },
+  "tasks": 55,
+  "by_category": {
+    "breakfast_box": {
+      "records": 185,
+      "rules": 5275,
+      "unknown_records": 34
+    },
+    "juice_bottle": {
+      "records": 236,
+      "rules": 5284,
+      "unknown_records": 41
+    },
+    "pushpins": {
+      "records": 229,
+      "rules": 1587,
+      "unknown_records": 16
+    },
+    "splicing_connectors": {
+      "records": 227,
+      "rules": 1535,
+      "unknown_records": 26
+    },
+    "screw_bag": {
+      "records": 259,
+      "rules": 1460,
+      "unknown_records": 47
+    },
+    "Sticks": {
+      "records": 770,
+      "rules": 2787,
+      "unknown_records": 293
+    },
+    "Fruits": {
+      "records": 750,
+      "rules": 2250,
+      "unknown_records": 0
+    },
+    "Tools": {
+      "records": 800,
+      "rules": 5600,
+      "unknown_records": 0
+    },
+    "Cookies": {
+      "records": 780,
+      "rules": 6904,
+      "unknown_records": 58
+    },
+    "Tapes": {
+      "records": 800,
+      "rules": 2851,
+      "unknown_records": 349
+    },
+    "Stationery": {
+      "records": 800,
+      "rules": 10398,
+      "unknown_records": 1
+    },
+    "Ropes": {
+      "records": 800,
+      "rules": 5594,
+      "unknown_records": 6
+    },
+    "Blocks": {
+      "records": 800,
+      "rules": 5600,
+      "unknown_records": 0
+    },
+    "Dishes": {
+      "records": 805,
+      "rules": 3642,
+      "unknown_records": 383
+    },
+    "Balls": {
+      "records": 790,
+      "rules": 5530,
+      "unknown_records": 0
+    }
+  },
+  "score_and_decision_reproduction": {
+    "matching_records": 9031,
+    "score_changes": 0,
+    "decision_changes": 0,
+    "maximum_independent_normalized_score_error": 0.0
+  },
+  "checks": {
+    "all_executed_rules_have_operand_records": true,
+    "all_residuals_reconstructed": true,
+    "all_score_tails_and_aggregations_recomputed": true,
+    "all_cited_evidence_ids_resolve": true,
+    "all_cited_object_fields_equal_saved_facts": true,
+    "all_missing_evidence_retained": true,
+    "all_alarm_subsets_sufficient_and_minimum_cardinality": true
+  },
+  "controls": {
+    "minimum_subset_exhaustive_synthetic_checks": 160,
+    "joint_aggregation_fixture_passed": true,
+    "threshold_only_diagnostic_changes_conclusion_preserves_observed_violation": true,
+    "deliberate_corruptions_rejected": [
+      "operand",
+      "object_reference",
+      "decision",
+      "evidence_id"
+    ],
+    "controls_are_diagnostic_only_not_new_deployments_or_test_images": true
+  },
+  "protected_files_unchanged": 44,
+  "training": 0,
+  "network_forward_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0,
+  "language_model_calls": 0,
+  "elapsed_seconds": 16.66186285018921,
+  "interpretation": "Numerical execution fidelity and provenance consistency; not an independent visual grounding or human explanation-quality evaluation."
+}

@@ -1,0 +1,16 @@
+{
+  "python": "3.10.12 (main, Mar  3 2026, 11:56:32) [GCC 11.4.0]",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.15.3",
+    "Pillow": "12.2.0",
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "opencv-python": null,
+    "scikit-image": "0.25.2",
+    "scikit-learn": "1.7.2",
+    "transformers": "5.12.1"
+  },
+  "inspection": "CPU-only metadata query; no model imports, no GPU assigned",
+  "image_id": "sha256:4f7ff37b6e96a1c8dce020f33c149043b3dbe6af17a191b2a6e87670f46fa57a"
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+my_reproduction/
+reproduction_output/
+*_replay.json
+!audit/*_replay.json
+archival_inputs/
+checkpoints/visual_frontend/

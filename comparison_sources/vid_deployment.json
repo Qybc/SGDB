@@ -1,0 +1,45 @@
+{
+  "state": "frozen_before_annotation_training_and_new_test_inference",
+  "mode": "target-domain normal-only adaptation, not zero-shot cross-dataset transfer",
+  "datasets": {
+    "VID-AD": {
+      "all_scenarios": [
+        "Sticks",
+        "Fruits",
+        "Tools",
+        "Cookies",
+        "Tapes",
+        "Stationery",
+        "Ropes",
+        "Blocks",
+        "Dishes",
+        "Balls"
+      ],
+      "all_capture_conditions": [
+        "",
+        "_Cable_BG",
+        "_Mesh_BG",
+        "_Low-light_CD",
+        "_Blurry_CD"
+      ],
+      "official_test_count": 7895,
+      "training_protocol": "one model per scenario, pooled capture conditions; every method uses identical source partitions",
+      "split": "official train indices 0:10+30:40 training;15:20+40:45 development;20:25+45:50 calibration;10:15+25:30 embargo; official test unchanged",
+      "grouping": "configuration-balanced consecutive frame-index blocks, held together across all capture conditions; five-frame guard sections retained; source video/instance independence remains unverified",
+      "known_limitation": "Raw video/physical-instance identifiers are not supplied. No claim of verified video-instance-independent generalization."
+    }
+  },
+  "measurement_annotations": "20 training (indices3,35,37,39 across5conditions) and15 development (19,41,43 across5conditions) weak normal boxes per VID scenario; additional normal-only annotation frames requested after balancing",
+  "annotation_model": "<external-model-or-data-asset>",
+  "baseline_training": "SALAD final70000 steps; LogiCo final200epochs, no test-selected checkpoint; all receive the same frozen pixel-predicted component maps",
+  "additional_comparison": "ComAD shared-component-map adaptation and PUAD official scorer with shared independently optimized EfficientAD branch; AnomalyMoE frozen transfer optional",
+  "threshold": "strict score > normal calibration 95th percentile, higher; no test optimization",
+  "metrics": [
+    "per-scenario/per-condition AUROC",
+    "fixed-threshold F1",
+    "anomaly recall",
+    "normal FPR",
+    "violation-type recall"
+  ],
+  "retrospective": "Earlier independent Qwen experiment already viewed these benchmark images; this is not a blind new benchmark."
+}

@@ -1,0 +1,92 @@
+{
+  "initial_bound": {
+    "archival_filename": "predictions.json",
+    "sha256": "df59b74c6607040e619ea90be4d302428e4c0109391174b3a2b06a2da6a95ed2",
+    "reference_mode": "own_normal"
+  },
+  "uniform_mask": {
+    "archival_filename": "predictions_own_normal.jsonl.gz",
+    "sha256": "c8f6c9551de71d5827326c4e61f55595c1621dba5fe34b58f362faf9b34c6779",
+    "reference_mode": "own_normal"
+  },
+  "uniform_mask_fixed_refs": {
+    "archival_filename": "predictions_shared_original.jsonl.gz",
+    "sha256": "8d3adfe78d25f8fcd0cced5a5384eac493d07e15b633b2039d6946228e9eee96",
+    "reference_mode": "shared_original"
+  },
+  "quality_only": {
+    "archival_filename": "predictions_own_normal.jsonl.gz",
+    "sha256": "ca3f5f83d02dd0fad752e3eb80eb88056ee809cec47c1b2c0d79cc6e2b221435",
+    "reference_mode": "own_normal"
+  },
+  "quality_only_fixed_refs": {
+    "archival_filename": "predictions_shared_original.jsonl.gz",
+    "sha256": "318982e9d061ee12844078fdf6c233c01005058457ccdbfaaefad6f3ae565abe",
+    "reference_mode": "shared_original"
+  },
+  "SGDB_V2": {
+    "archival_filename": "predictions_own_normal.jsonl.gz",
+    "sha256": "2d1a9c73f18cb4fd1d86a29b5e974075c7fdda3793c3483ce041879b7f6501c0",
+    "reference_mode": "own_normal"
+  },
+  "SGDB_V2_fixed_refs": {
+    "archival_filename": "predictions_shared_original.jsonl.gz",
+    "sha256": "de850cc12f9f414d0e4d95a424c913193f6120ac0325febf64a055dc7085fc59",
+    "reference_mode": "shared_original"
+  },
+  "ComAD*": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "FMP-v1": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "FMP-v1+ZL1": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "LogiCo*": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "LogicAD-FE-fast": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "PUAD*": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "Qwen3-VL-8B": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "SALAD": {
+    "archival_filename": "predictions_all8.jsonl.gz",
+    "sha256": "0c283a4f4894e4c74c6f36ae3db1740b9eefd665d4b5593c81284ea107cd1277",
+    "reference_mode": "archived_baseline_configuration"
+  },
+  "hybrid_plain_set": {
+    "archival_filename": "predictions.json",
+    "sha256": "cacf630711386616779e80d3b92e4f7c076ba938f818f4b2c11e85d40d7d49b4",
+    "reference_mode": "own_normal"
+  },
+  "direct_evidence_edit": {
+    "archival_filename": "predictions.json",
+    "sha256": "e756515a6d68d5725bb2f3d27f6941e28d9301178fc998ee55aa961a54a9cfb3",
+    "reference_mode": "own_normal"
+  },
+  "direct_plain_set": {
+    "archival_filename": "predictions.json",
+    "sha256": "fdd760dd0614d8cf791855d83ed4bafe8e8de92a41474b028ba27bd8a83bf7ad",
+    "reference_mode": "own_normal"
+  }
+}

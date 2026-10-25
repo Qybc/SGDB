@@ -1,0 +1,34 @@
+{
+  "experiment": "SGDB frozen instance-support completeness v2",
+  "date": "2026-10-24",
+  "purpose": "Retain the v1 tape measurement benefit while checking whether identifiable, complete instance support prevents screw degradation",
+  "development_disclosure": "The original public badcases and v1 test outcomes were inspected to formulate this mechanism. This is an exploratory follow-up, not a blind evaluation. No v2 test score or repair result is used to tune the declared gates.",
+  "categories": ["screw_bag", "Tapes", "Ropes", "Sticks", "Stationery"],
+  "comparators_reused_without_rerun": ["original_frozen", "v1_uniform_mask", "v1_quality_select"],
+  "new_settings": ["whole_component", "complete_support"],
+  "main_setting": "complete_support",
+  "base_readout": "Exactly reuse v1 saved mask-PCA candidate axes, original axes, quality scores and DEV quality floor. No new geometry candidate, neural inference or mask extraction.",
+  "base_quality_gate": "Q_mask >= 0.9908659040240699 and Q_mask >= Q_original + 0.05, as fixed in v1 normal DEV",
+  "whole_component_checks": {
+    "substantial_component": "8-connected same-class components with at least max(16, ceil(0.02 * total class-mask area)) pixels",
+    "component_bijection": "The number of substantial components equals the number of currently bound recognized instances of this class; each instance is linked to a distinct dominant component. This is an identifiability check using observed instances, not a normal expected-count rule.",
+    "indivisibility": "At least 98% of the full dominant component must belong to this instance under v1 ownership. Reject assigning only a Voronoi fragment of a shared component.",
+    "anchor_support": "Frozen instance center must lie within two mask pixels of its dominant component (3x3 dilation repeated twice).",
+    "class_atomicity": "The structural checks must pass for every bound instance of a class before any of its axes may be replaced. Counts, identities and boxes remain frozen."
+  },
+  "complete_support_additions": {
+    "image_boundary": "Dominant component must not contact the image boundary or the adjacent one-pixel band; otherwise truncation is unresolved.",
+    "occlusion_tail": "If the proposed axis shortens the original axis by more than one native mask-pixel diagonal, reject replacement if a new endpoint or an old-axis sample removed by the new endpoint interval lies inside another frozen object box expanded by one mask pixel. The check uses all recognized objects, regardless of class."
+  },
+  "parameter_policy": "The two new structural gates and pixel/area tolerances above are fixed before v2 normal/test evaluation. Normal DEV is used for gate diagnostics and the inherited quality floor; no category-specific switches or new candidate search.",
+  "fallback": "Retain the original frozen SGDB axis. No normal imputation, object deletion, abstention, case dropping, or choice by closeness to the normal rule interval.",
+  "reference_modes": {
+    "shared_original": "Keep original SGDB normal intervals, residual references and CAL thresholds; change only the gated test measurements.",
+    "own_normal": "Apply each gate to original normal TRAIN/DEV/CAL and test; refit with exactly the old fitting/CAL protocol, without changing split roles."
+  },
+  "invariants": ["All 9031 test records retained", "Original semantic identities, counts and confidences", "Centers and boxes", "One-to-one evidence association", "Frozen color and OCR", "Non-length rules", "Original papers, tables and previous experiments"],
+  "report": ["Per-category FP-to-TN, FN-to-TP, TP-to-FN and TN-to-FP", "Full-dataset and affected-task AUROC/F1", "Retention of all 90 v1 tape repairs and the prior tape regression", "Removal and addition of prior screw regressions", "Number of original and candidate axes actually changed", "Gate rejection reasons and coverage in normal DEV and test", "Calibration drift", "Preselected example traces"],
+  "new_training": 0,
+  "network_forward_calls": 0,
+  "baseline_runs": 0
+}

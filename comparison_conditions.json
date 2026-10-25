@@ -1,0 +1,82 @@
+[
+  {
+    "method": "SGDB V2",
+    "normal_use": "component learning; DEV selection; references; CAL",
+    "component_targets": "LOCO 1183 fit +147 DEV; VID 194 fit +147 DEV parents",
+    "explicit_rules": "yes: discrete requirements and normal-fitted intervals",
+    "DEV_selection": "normal component targets; shared global gates",
+    "VID_calibration": "task level, 10 normal CAL images each",
+    "implementation": "final evidence-edit decoder; partial binding; complete_support V2",
+    "source": "sgdb_frontend.json; sgdb_comparison_text.tex"
+  },
+  {
+    "method": "Internal decoder/readout controls",
+    "normal_use": "same role partitions and budgets as SGDB",
+    "component_targets": "shared with SGDB",
+    "explicit_rules": "same executable requirements",
+    "DEV_selection": "same historical recipe; frozen controls",
+    "VID_calibration": "own archived task thresholds; shared-reference diagnostic also saved",
+    "implementation": "same inputs; one declared mechanism changed",
+    "source": "sgdb_comparison_text.tex"
+  },
+  {
+    "method": "SALAD",
+    "normal_use": "normal-image fitting/statistics; normal CAL",
+    "component_targets": "VID uses shared pixel-predicted component maps in archived adapter; LOCO target detail not established by retained protocol",
+    "explicit_rules": "SGDB rule executor not used",
+    "DEV_selection": "no test-selected checkpoint documented; exact method-specific DEV grid not established here",
+    "VID_calibration": "category level",
+    "implementation": "completed local deployment; final 70000-step VID branch",
+    "source": "vid_deployment.json; sgdb_comparison_text.tex"
+  },
+  {
+    "method": "LogiCo",
+    "normal_use": "normal component frontend/model fitting; normal CAL",
+    "component_targets": "VID archived component frontend; exact LOCO annotation lineage requires adapter audit",
+    "explicit_rules": "SGDB rule executor not used",
+    "DEV_selection": "VID fixed final 200 epochs; other details retained with adapter",
+    "VID_calibration": "not established by this retained protocol; saved per-image threshold supplied",
+    "implementation": "local component adapter; not an information-matched SGDB control",
+    "source": "vid_deployment.json; sgdb_comparison_text.tex"
+  },
+  {
+    "method": "ComAD",
+    "normal_use": "normal TRAIN features/clustering/statistics; normal CAL",
+    "component_targets": "LOCO none; VID shared component-map frontend",
+    "explicit_rules": "SGDB rule executor not used",
+    "DEV_selection": "LOCO fixed K=5 DINO-S8 + CRF recipe",
+    "VID_calibration": "not established by retained comparison text; saved thresholds supplied",
+    "implementation": "LOCO DINO-S8/CRF; VID component-map adaptation",
+    "source": "loco_baselines.json; vid_deployment.json"
+  },
+  {
+    "method": "PUAD",
+    "normal_use": "normal TRAIN optimization/statistics; normal CAL",
+    "component_targets": "LOCO none; VID shared component-map input in local adapter",
+    "explicit_rules": "SGDB rule executor not used",
+    "DEV_selection": "fixed final 70000 steps; no intermediate test selection",
+    "VID_calibration": "category level",
+    "implementation": "external ImageNet penalty-image term omitted",
+    "source": "loco_baselines.json; vid_deployment.json; sgdb_comparison_text.tex"
+  },
+  {
+    "method": "Qwen3-VL-8B",
+    "normal_use": "archived prompting and normal-calibrated scores; exact prompt-reference count not established here",
+    "component_targets": "no SGDB-specific learned decoder; prompt supervision must be checked in original adapter",
+    "explicit_rules": "prompt-specific; not the SGDB executor",
+    "DEV_selection": "not established in retained comparison protocol",
+    "VID_calibration": "saved per-image thresholds supplied; pooling not independently established here",
+    "implementation": "frozen image-language baseline; distinct from text-only explanation model",
+    "source": "sgdb_comparison_text.tex"
+  },
+  {
+    "method": "LogicAD-FE-fast",
+    "normal_use": "archived local program/frontend and normal CAL",
+    "component_targets": "local frontend; exact component-label lineage requires original adapter audit",
+    "explicit_rules": "simplified local program; differs from SGDB executor",
+    "DEV_selection": "not established by retained comparison text",
+    "VID_calibration": "saved thresholds supplied; grouping not independently established here",
+    "implementation": "simplified local variant, not complete original LogicAD",
+    "source": "sgdb_comparison_text.tex"
+  }
+]

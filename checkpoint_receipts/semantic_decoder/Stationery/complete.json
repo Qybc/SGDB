@@ -1,0 +1,101 @@
+{
+  "state": "complete",
+  "category": "Stationery",
+  "variant": "evidence_edit",
+  "cycles": 32,
+  "optimizer_steps": 768,
+  "image_exposures": 1536,
+  "selected_epoch": 32,
+  "normal_dev": {
+    "objective": 0.9875345045900434,
+    "point_f1": 1.0,
+    "mask_dice": 0.937672522950217,
+    "axis_error": 0.005968464007576366,
+    "count_exact": 1.0,
+    "per_class": [
+      {
+        "class": 0,
+        "tp": 31,
+        "fp": 0,
+        "fn": 0,
+        "point_f1": 1.0,
+        "dice": 0.8761872290682383,
+        "count_exact": 1.0
+      },
+      {
+        "class": 1,
+        "tp": 30,
+        "fp": 0,
+        "fn": 0,
+        "point_f1": 1.0,
+        "dice": 0.9555217732444096,
+        "count_exact": 1.0
+      },
+      {
+        "class": 2,
+        "tp": 27,
+        "fp": 0,
+        "fn": 0,
+        "point_f1": 1.0,
+        "dice": 0.9487216734456712,
+        "count_exact": 1.0
+      },
+      {
+        "class": 3,
+        "tp": 29,
+        "fp": 0,
+        "fn": 0,
+        "point_f1": 1.0,
+        "dice": 0.9702594160425486,
+        "count_exact": 1.0
+      }
+    ],
+    "images": 30
+  },
+  "checkpoint_sha256": "668fe36cb635a56edb7967f83956c5180b3ab62ad14b7e958c90060bbe2b75c3",
+  "training_lock_sha256": "d76e9574f7d70b52fa4b50df867752fc7f0493fe6a5e099734029167bd6d3395",
+  "frozen_FMP_checkpoint_sha256": "4598c27dc359c734e88747234d8e6a30c86963be814948168e90d10238cce0ca",
+  "frozen_FMP_optimizer_parameters": 0,
+  "parameter_count": 118287,
+  "train_parent_ids": [
+    "Stationery/train/good/037.jpg",
+    "Stationery_Cable_BG/train/good/003.jpg",
+    "Stationery_Cable_BG/train/good/035.jpg",
+    "Stationery_Cable_BG/train/good/039.jpg",
+    "Stationery_Mesh_BG/train/good/037.jpg",
+    "Stationery_Low-light_CD/train/good/003.jpg",
+    "Stationery_Low-light_CD/train/good/035.jpg",
+    "Stationery_Low-light_CD/train/good/039.jpg",
+    "Stationery_Blurry_CD/train/good/037.jpg",
+    "Stationery/train/good/003.jpg",
+    "Stationery/train/good/035.jpg",
+    "Stationery/train/good/039.jpg",
+    "Stationery_Cable_BG/train/good/037.jpg",
+    "Stationery_Mesh_BG/train/good/003.jpg",
+    "Stationery_Mesh_BG/train/good/035.jpg",
+    "Stationery_Mesh_BG/train/good/039.jpg",
+    "Stationery_Low-light_CD/train/good/037.jpg",
+    "Stationery_Blurry_CD/train/good/003.jpg",
+    "Stationery_Blurry_CD/train/good/035.jpg",
+    "Stationery_Blurry_CD/train/good/039.jpg"
+  ],
+  "dev_parent_ids": [
+    "Stationery/train/good/019.jpg",
+    "Stationery/train/good/041.jpg",
+    "Stationery/train/good/043.jpg",
+    "Stationery_Blurry_CD/train/good/019.jpg",
+    "Stationery_Blurry_CD/train/good/041.jpg",
+    "Stationery_Blurry_CD/train/good/043.jpg",
+    "Stationery_Cable_BG/train/good/019.jpg",
+    "Stationery_Cable_BG/train/good/041.jpg",
+    "Stationery_Cable_BG/train/good/043.jpg",
+    "Stationery_Low-light_CD/train/good/019.jpg",
+    "Stationery_Low-light_CD/train/good/041.jpg",
+    "Stationery_Low-light_CD/train/good/043.jpg",
+    "Stationery_Mesh_BG/train/good/019.jpg",
+    "Stationery_Mesh_BG/train/good/041.jpg",
+    "Stationery_Mesh_BG/train/good/043.jpg"
+  ],
+  "normal_validation_sha256": "5b3a0fa5601606680c8b757603a2eb0ddb31934545449ff64f437629deb7f6a1",
+  "seconds": 41.315651655197144
+}

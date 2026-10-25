@@ -1,0 +1,46 @@
+{
+  "experiment": "LOCO ComAD + PUAD supplement",
+  "method_labels": [
+    "ComAD*",
+    "PUAD*"
+  ],
+  "categories": [
+    "breakfast_box",
+    "juice_bottle",
+    "pushpins",
+    "screw_bag",
+    "splicing_connectors"
+  ],
+  "source_split": "Exact frozen FMP-v1 original LOCO train IDs; DEV and other normal-train reserved IDs excluded; official validation/good for calibration; original test/good+logical_anomalies only",
+  "test_images": 1136,
+  "training_supervision": "RGB normal training images only; no component labels, masks, test labels or anomaly training images",
+  "seed": 42,
+  "ComAD": {
+    "frontend": "released DINO ViT-Small patch8 generic pretrained model;224square ImageNet-normalized RGB;1% per-image greedy coreset with128D projection;normal TRAIN patch KMeans K5/n_init10/seed42; released CRF2iterations",
+    "scorer": "released training-only background filtering, area/color features, component histograms, DBSCAN eps .1mean/min_samples10,5NN global and component scores",
+    "compatibility": "np.float alias; define all-DBSCAN-noise distance return; skip unsupported components with<5 train instances; no test-selected parameters",
+    "fit_scope": "normal TRAIN only; calibration normal validation; all5types same frozen recipe"
+  },
+  "PUAD": {
+    "teacher": "frozen generic ImageNet-distilled SALAD/EfficientAD-M teacher; no domain warm start",
+    "fresh_training": "new student768 and autoencoder384 percategory; normal TRAIN only;70000steps;batch1;Adam lr1e-4 wd1e-5;lr1e-5 at66500;hard .999 teacher/student loss + teacher/AE and AE/student losses; bfloat16 forwards and FP32 losses/weights;FP32 inference",
+    "augmentation": "brightness/contrast/saturation .2, fixed seed42",
+    "adaptation": "extra ImageNet penalty images unavailable/omitted, matching cross-scene local adapter; no claim of exact full original training reproduction",
+    "statistics": "teacher channel mean/std and released PUAD student feature LedoitWolf covariance from normal TRAIN; mapq90/q99.5 and scoremean/std from independent normal validation",
+    "score": "released standardized EfficientAD maximum map + standardized global Mahalanobis score",
+    "checkpoint": "fixed final70000steps; no test intermediate selection; resumes only own checkpoints"
+  },
+  "threshold": "percategory normal validation score q95(higher),strict score>threshold; no test-optimal F1",
+  "freeze": "source/inputs/generic weights before fits; fit statistics/models/calibration before each category test; no recipe changes from test errors",
+  "aggregation": "macro5 AUROC/F1/recall/FPR, percategory and perimage; methods reported separately only when all5complete",
+  "provenance": {
+    "ComAD_commit": "3893787762f47121b455145fe410b353ff6ae1c3",
+    "PUAD_commit": "8cc76ca353abe623e2c20a7ac61eaa85df8d9429"
+  },
+  "limitations": [
+    "Public test set inspected in previous development; retrospective non-blind supplement.",
+    "LOCO ComAD uses original unsupervised DINO/CRF frontend; current VID/Auto ComAD adapter uses R3 component maps; disclose frontend differences.",
+    "PUAD is a local adaptation due absent extra ImageNet penalty image dataset."
+  ],
+  "resource_policy": "two supplemental workers on GPUs1/2 with modest VRAM; preserve all running FMP, SALAD/PUAD cross-scene and Qwen jobs; no AutoVI missing experiments"
+}

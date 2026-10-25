@@ -1,0 +1,43 @@
+\section{Experiments}
+\subsection{Datasets and information sources}
+\input{sections/benchmark_floats}
+We evaluate five MVTec LOCO AD categories using normal images and logical anomalies, for 1,136 test images; structural anomalies are excluded. VID-AD contributes 7,895 images across ten scenarios and five capture conditions, giving all 50 deployment tasks \cite{loco,vid}. Parent-image roles and known cross-condition source groups are preserved.
+
+Normal images have separate fitting, development and calibration roles. Fitting observations train the readers and provide residual references; development observations select checkpoints/readout settings and pad continuous intervals; calibration scores fix alarm thresholds. LOCO contains 1,183 fitting, 147 development and 305 calibration images. VID uses 1,000, 500 and 500 images in these roles, with ten calibration images per deployment task.
+
+Component annotations supply class, center, box, axis and weak-mask targets for visual learning. They cover all LOCO fitting/development parents and 194 fitting/147 development VID parents. Factual edits of fitting parents carry updated targets and can produce logically abnormal configurations. Manually specified discrete task requirements configure the executor; continuous measurement intervals are fitted from normal observations. Calibration images are independent of network and association selection. The public tests were inspected during earlier development; the present results use the subsequently frozen configurations. Supplementary Table~S1 gives the category-level budgets.
+
+\subsection{Implementation and comparisons}\label{sec:comparisons}
+The visual frontend is trained for 40 epochs per category at $448\times320$ resolution, using AdamW \cite{adamw}. Each semantic decoder adds 768 updates and 1,536 image exposures with the frontend frozen. At most 64 candidate queries and 64 grid queries pass through a width-64, four-head, two-layer decoder. Association is selected on 294 annotated normal development parents using the fixed point-F1/axis-error objective. The selected same-class radius is 0.08. The support-readout quality floor is fixed from 609 readable normal-development axes. The component and pixel tolerances are shared across categories; normal TRAIN/DEV/CAL data receive the same readout as test images. Architecture, optimization and readout details are provided in the supplementary material.
+
+The external comparisons report the completed local deployments of SALAD, LogiCo, ComAD, PUAD, Qwen3-VL-8B and LogicAD-FE-fast. LOCO ComAD uses DINO-S8 clustering and CRF without component labels; its VID deployment uses a shared component-map frontend. Local PUAD omits the external ImageNet penalty-image term, and LogicAD-FE-fast uses a simplified program/frontend configuration. VID SALAD and PUAD use category-level calibration; SGDB uses task-level calibration. The supplementary material specifies the supervision, implementation and calibration settings of these deployments. AUROC and fixed-threshold F1 are percentages, macro-averaged over five LOCO tasks or all 50 VID tasks.
+
+Internal controls share normal-source partitions, component-supervision budgets, the visual frontend and task requirements. Decoder variants use the same update budget. Binding/readout controls reuse frozen semantic outputs and visual witnesses. Each configuration fits its references and threshold from its own normal facts using the same scoring and calibration recipe; the readout study also fixes the initial references and thresholds to isolate measurement changes.
+
+
+\subsection{Detection performance}
+Tables~\ref{tab:loco} and \ref{tab:vidscenarios} report complete category/scenario comparisons. SGDB achieves 98.19 AUROC and 94.52 F1 on LOCO logical, and 93.56 AUROC and 92.76 F1 on VID. Relative to the FMP plus guarded-geometry reference, the changes are +0.11/+0.98 percentage points on LOCO AUROC/F1 and +2.22/+3.30 on VID. The VID result reflects the complete set of capture conditions.
+
+
+
+Figures~\ref{fig:visualcomparison} and \ref{fig:vidvisualcomparison} compare 20 LOCO and 30 VID sources. Source order is fixed lexicographically across categories and conditions. Each prediction strip shows the decision and its score/threshold comparison.
+
+
+
+SGDB's boxes and axes come from its support-checked associated objects; the semantic colors depict the frozen frontend witnesses. Baseline representations retain their original meanings: SALAD shows saved local appearance/composition maps and ComAD displays component regions.
+
+
+
+
+
+The disaggregated results show complementary strengths. SGDB attains the highest displayed LOCO AUROC on screw bag and splicing connectors, while category leaders differ across the benchmark. On VID, support-certified readout raises Tapes from 89.43/85.27 to 98.73/94.99 AUROC/F1, alongside strong results for Stationery, Sticks and Ropes. The fixed-threshold normal FPR is 1.43\% on LOCO and 11.36\% on VID. Complete task-level results and condition summaries appear in the supplementary material.
+
+
+
+
+
+\gdef\firstcasefigure{\begin{minipage}[b]{\textwidth}\centering\captionsetup{type=figure}
+\includegraphics[width=\linewidth]{figures/ebfd_cases_main.pdf}
+\caption{Execution-grounded reports: (a) screw-length alarm; (b) missing-bolt alarm; (c) normal Stationery under blur. Rows separate visual evidence, decisions, frozen-LLM claims and executor-owned measurements. An alarm requires $s>\tau$; $S(C)$ is the selected subset score. Evidence IDs are local to each case. GT labels are used only for retrospective review.}
+\label{fig:ebfdcases}
+\end{minipage}}

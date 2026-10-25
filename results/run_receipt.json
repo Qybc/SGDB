@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "original_task_rows_verified": 715,
+  "methods": 18,
+  "predictions_verified": 162558,
+  "bootstrap_replicates": 10000,
+  "group_count": 2715,
+  "training": 0,
+  "model_forward_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "seconds": 18.98
+}

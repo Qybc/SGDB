@@ -1,0 +1,81 @@
+{
+  "method_id": "FMP-v1",
+  "name": "Fact Measurement + Program v1",
+  "state": "predeclared_before_new_training",
+  "scope": {
+    "LOCO": "all five classes; normal vs logical only",
+    "VID-AD": "all ten scenarios and five capture conditions; full50 and type subgroups",
+    "AutoVI": "engine_wiring fastening and blue_hoop only; all three missing-part categories cancelled by user"
+  },
+  "training": {
+    "architecture": "ImageNet WRN50_2 through layer3 with global context, classwise centers/boxes/semantic masks/paired axial endpoints",
+    "one_model_per_category": true,
+    "initialization": "ImageNet only; no prior domain checkpoint",
+    "weights": "<external-model-or-data-asset>",
+    "input_wh": [
+      448,
+      320
+    ],
+    "seed": 42,
+    "epochs": 40,
+    "samples_per_epoch": 240,
+    "batch_size": 4,
+    "optimizer": "AdamW",
+    "lr_encoder": 0.0001,
+    "lr_heads": 0.001,
+    "weight_decay": 0.0001,
+    "schedule": "cosine; freeze encoder first2 epochs; freeze BN statistics",
+    "loss": "focal center +3 weighted semantic BCE/Dice +3 box L1 +3 permutation-invariant axial L1",
+    "supervision": "normal train component facts only; existing normal annotations/weak labels; no anomaly class loss",
+    "augmentation": "same-parent move/add/remove60% with overlap rejection; horizontal/vertical flips; brightness/gamma/blur; all factual targets updated",
+    "checkpoint_selection": "normal DEV originals plus deterministic same-parent edits; macro .8 pointF1+.2 weak-mask Dice; assess epoch1 and every4; first maximum wins",
+    "readout": "same finite heat threshold grid and segmentation threshold/area grid for every category; selected with factual DEV metric",
+    "same_architecture_all_16_categories": true
+  },
+  "facts": {
+    "interface": "class, center, box, paired axial endpoints, semantic masks; deterministic geometry/color/containment/binding facts",
+    "category_specific": "object label vocabulary and factual predicate definitions, not optimization hyperparameters",
+    "rule_input_to_visual_model": false,
+    "OCR": "fresh deterministic Qwen2.5-VL-3B transcription of printed rope label; same fixed prompt; normal and test phases separated; no Qwen anomaly reasoning/training",
+    "liquid_attribute_classifier": "fixed C=1 logistic classifier on measured normal TRAIN liquid-color descriptors and annotated fruit variant; no test fitting"
+  },
+  "rules": {
+    "implementation": "features.py raw predicates + program.py shared executor",
+    "interval_fit": "normal TRAIN q1/q99, scale=max(range,10% median magnitude,.01), padding=max(.25 scale, maximum normalDEV outside-distance)",
+    "unknown": "record unavailable fact names; one unavailable residual=1; no claim this establishes epistemic sufficiency",
+    "fusion": "per-rule empirical upper-tail references on normal TRAIN per deployment task, continuous extrapolation beyond maximum, max+0.01sum; same for all datasets",
+    "rule_changes": "visual measurement does not consume rule values; this rerun does not itself establish intervention generalization"
+  },
+  "calibration": {
+    "role": "LOCO official normal validation; original frozen VID/Auto normal calibration partitions",
+    "threshold": "per deployment task normal score q95(method=higher); strict greater-than",
+    "no_test_threshold_optimization": true,
+    "no_per_dataset_method_or_seed_selection": true
+  },
+  "split": "preserve audited original-parent roles, cross-condition frame groups and Auto pixel-duplicate exclusions; no new resplit after seeing scores",
+  "freeze": "training sources/code/hyperparameters hash before training; checkpoints/readouts/rules/normal calibration hash before final fresh test inference; OCR weights/prompt independently frozen before OCR phases",
+  "evaluation": [
+    "per-category and per-task AUROC",
+    "fixed-threshold F1",
+    "recall",
+    "normal FPR",
+    "type subsets including VID Relation20",
+    "unknown-evidence rate"
+  ],
+  "limitations": [
+    "Retrospective development rerun: public test sets were inspected in earlier rounds.",
+    "Normal component supervision differs from normal-only baselines; frontend/annotation budgets must be disclosed.",
+    "No trained active acquisition policy, general LLM reasoner or proved evidence sufficiency.",
+    "No established video/physical-instance-independent split for VID.",
+    "One seed; no post-result variant selection."
+  ],
+  "baseline_plan": {
+    "SALAD": "continue VID10 + AutoVI engine only; cancel all three missing-part categories across methods",
+    "PUAD": "continue VID10 + AutoVI engine only; missing-part categories cancelled",
+    "LogiCo": "completed14/14; retain results and adaptation-quality caveat",
+    "LogicAD": "retain user-approved local FE-fast adaptation; not original full method",
+    "ComAD": "retain completed adaptation; frontend differences disclosed",
+    "comparison": "frozenFMP-v1 all native outputs, no mixing previous ours checkpoints/scores with new main row"
+  },
+  "scope_change": "User explicitly cancelled only missing-part experiments; retains engine_wiring. Model/training/scoring hyperparameters unchanged before full training."
+}

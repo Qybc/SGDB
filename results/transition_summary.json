@@ -1,0 +1,32 @@
+[
+  {
+    "control": "initial_bound",
+    "wrong_unchanged": 816,
+    "correct_unchanged": 8124,
+    "repaired": 90,
+    "regressed": 1,
+    "repair_groups": 20,
+    "regress_groups": 1,
+    "groups_with_both": 0
+  },
+  {
+    "control": "uniform_mask",
+    "wrong_unchanged": 790,
+    "correct_unchanged": 8186,
+    "repaired": 28,
+    "regressed": 27,
+    "repair_groups": 28,
+    "regress_groups": 23,
+    "groups_with_both": 1
+  },
+  {
+    "control": "quality_only",
+    "wrong_unchanged": 803,
+    "correct_unchanged": 8192,
+    "regressed": 14,
+    "repaired": 22,
+    "repair_groups": 22,
+    "regress_groups": 14,
+    "groups_with_both": 0
+  }
+]

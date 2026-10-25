@@ -1,0 +1,23 @@
+{
+  "created_date": "2026-10-25",
+  "model": "SGDB complete_support V2",
+  "repetitions": 10000,
+  "seed": 20261025,
+  "CI": "paired percentile 95%, NumPy linear quantiles",
+  "strata": "dataset/category/binary label; entire cross-condition filename-index group travels together",
+  "resampling": "multinomial sampling with replacement of groups within each fixed category-label stratum",
+  "metrics": "same task-macro AUROC and fixed-threshold F1 as manuscript; no threshold/references refit",
+  "primary_comparisons": [
+    "SGDB_V2 - initial_bound",
+    "SGDB_V2 - uniform_mask",
+    "SGDB_V2 - quality_only"
+  ],
+  "secondary_comparison": "SGDB_V2 - FMP-v1+ZL1",
+  "sensitivity": "shared initial frozen references; same resampling draws",
+  "test_images": 9031,
+  "prior_test_development": "Public test badcases informed mechanism design. These are exploratory conditional stability intervals, not independent blind validation, seed variance, or simultaneous family-wise intervals.",
+  "training": 0,
+  "model_forward_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0
+}

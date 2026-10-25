@@ -1,0 +1,6 @@
+{
+  "state": "passed",
+  "brute_force_expanded_sample_comparisons": 144,
+  "max_error": 0.0,
+  "implementation": "Explicitly repeat sampled groups, pairwise-positive/negative AUROC, direct confusion counts; does not use the weighted bootstrap metric implementation."
+}

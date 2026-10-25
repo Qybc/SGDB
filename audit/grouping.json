@@ -1,0 +1,11 @@
+{
+  "records": 12666,
+  "test_images": 9031,
+  "LOCO_groups": 1136,
+  "VID_index_groups": 1579,
+  "VID_views_per_group": 5,
+  "group_role_overlap": 0,
+  "exact_sha256_role_overlap": 0,
+  "physical_source_correspondence_verified": false,
+  "interpretation": "Conditional clustered analysis with a filename-index correspondence assumption, not a new independent or blind test."
+}

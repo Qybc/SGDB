@@ -1,0 +1,531 @@
+{
+  "state": "frozen_normal_DEV_only",
+  "created_unix": 1792512350.256366,
+  "candidate": {
+    "name": "same_class_r0.08",
+    "class_aware": true,
+    "radius": 0.08
+  },
+  "macro": {
+    "same_class_r0.04": {
+      "objective": 0.9752773246019569,
+      "point_F1": 0.9910474730941546,
+      "clipped_relative_axis_error": 0.08780326936683389,
+      "unbound": 13,
+      "objects": 3136
+    },
+    "same_class_r0.08": {
+      "objective": 0.979896587943397,
+      "point_F1": 0.9967617588084404,
+      "clipped_relative_axis_error": 0.08756409551677755,
+      "unbound": 0,
+      "objects": 3136
+    },
+    "any_class_r0.04": {
+      "objective": 0.9746648073528774,
+      "point_F1": 0.9935166088966237,
+      "clipped_relative_axis_error": 0.10074239882210813,
+      "unbound": 6,
+      "objects": 3136
+    },
+    "any_class_r0.08": {
+      "objective": 0.97721256219358,
+      "point_F1": 0.9967617588084404,
+      "clipped_relative_axis_error": 0.10098422426586226,
+      "unbound": 0,
+      "objects": 3136
+    }
+  },
+  "per_category": {
+    "same_class_r0.04": {
+      "breakfast_box": {
+        "point_F1": 0.9661919939052485,
+        "clipped_relative_axis_error": 0.28257955332470736,
+        "objective": 0.9164376844592573,
+        "unbound": 0,
+        "objects": 983,
+        "images": 29
+      },
+      "juice_bottle": {
+        "point_F1": 0.9365079365079365,
+        "clipped_relative_axis_error": 0.02658422934849767,
+        "objective": 0.9438895033366497,
+        "unbound": 12,
+        "objects": 135,
+        "images": 27
+      },
+      "pushpins": {
+        "point_F1": 0.9983922829581994,
+        "clipped_relative_axis_error": 0.02584200798093277,
+        "objective": 0.993545424770373,
+        "unbound": 0,
+        "objects": 930,
+        "images": 31
+      },
+      "splicing_connectors": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.022460536626598665,
+        "objective": 0.9955078926746803,
+        "unbound": 0,
+        "objects": 290,
+        "images": 30
+      },
+      "screw_bag": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.20135675376583875,
+        "objective": 0.9597286492468323,
+        "unbound": 0,
+        "objects": 180,
+        "images": 30
+      },
+      "Sticks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.01028258837281819,
+        "objective": 0.9979434823254364,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Fruits": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.09375808515854125,
+        "objective": 0.9812483829682919,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      },
+      "Tools": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.12050942763600503,
+        "objective": 0.9758981144727991,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Cookies": {
+        "point_F1": 0.9868421052631579,
+        "clipped_relative_axis_error": 0.11036815364048302,
+        "objective": 0.9674000534824297,
+        "unbound": 0,
+        "objects": 72,
+        "images": 15
+      },
+      "Tapes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.006589373932486181,
+        "objective": 0.9986821252135029,
+        "unbound": 0,
+        "objects": 30,
+        "images": 15
+      },
+      "Stationery": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.04125509115252994,
+        "objective": 0.9917489817694941,
+        "unbound": 0,
+        "objects": 60,
+        "images": 15
+      },
+      "Ropes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.047959076686476546,
+        "objective": 0.9904081846627047,
+        "unbound": 0,
+        "objects": 36,
+        "images": 12
+      },
+      "Blocks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.041628417186601305,
+        "objective": 0.9916743165626798,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Dishes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.06595374166370295,
+        "objective": 0.9868092516672595,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Balls": {
+        "point_F1": 0.9777777777777779,
+        "clipped_relative_axis_error": 0.2199220040262885,
+        "objective": 0.9382378214169647,
+        "unbound": 1,
+        "objects": 75,
+        "images": 15
+      }
+    },
+    "same_class_r0.08": {
+      "breakfast_box": {
+        "point_F1": 0.9661919939052485,
+        "clipped_relative_axis_error": 0.28257955332470736,
+        "objective": 0.9164376844592573,
+        "unbound": 0,
+        "objects": 983,
+        "images": 29
+      },
+      "juice_bottle": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.024510760421914465,
+        "objective": 0.9950978479156172,
+        "unbound": 0,
+        "objects": 135,
+        "images": 27
+      },
+      "pushpins": {
+        "point_F1": 0.9983922829581994,
+        "clipped_relative_axis_error": 0.02584200798093277,
+        "objective": 0.993545424770373,
+        "unbound": 0,
+        "objects": 930,
+        "images": 31
+      },
+      "splicing_connectors": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.022460536626598665,
+        "objective": 0.9955078926746803,
+        "unbound": 0,
+        "objects": 290,
+        "images": 30
+      },
+      "screw_bag": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.20135675376583875,
+        "objective": 0.9597286492468323,
+        "unbound": 0,
+        "objects": 180,
+        "images": 30
+      },
+      "Sticks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.01028258837281819,
+        "objective": 0.9979434823254364,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Fruits": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.09375808515854125,
+        "objective": 0.9812483829682919,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      },
+      "Tools": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.12050942763600503,
+        "objective": 0.9758981144727991,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Cookies": {
+        "point_F1": 0.9868421052631579,
+        "clipped_relative_axis_error": 0.11036815364048302,
+        "objective": 0.9674000534824297,
+        "unbound": 0,
+        "objects": 72,
+        "images": 15
+      },
+      "Tapes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.006589373932486181,
+        "objective": 0.9986821252135029,
+        "unbound": 0,
+        "objects": 30,
+        "images": 15
+      },
+      "Stationery": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.04125509115252994,
+        "objective": 0.9917489817694941,
+        "unbound": 0,
+        "objects": 60,
+        "images": 15
+      },
+      "Ropes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.047959076686476546,
+        "objective": 0.9904081846627047,
+        "unbound": 0,
+        "objects": 36,
+        "images": 12
+      },
+      "Blocks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.041628417186601305,
+        "objective": 0.9916743165626798,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Dishes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.06595374166370295,
+        "objective": 0.9868092516672595,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Balls": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.2184078652020266,
+        "objective": 0.9563184269595948,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      }
+    },
+    "any_class_r0.04": {
+      "breakfast_box": {
+        "point_F1": 0.9661919939052485,
+        "clipped_relative_axis_error": 0.28257955332470736,
+        "objective": 0.9164376844592573,
+        "unbound": 0,
+        "objects": 983,
+        "images": 29
+      },
+      "juice_bottle": {
+        "point_F1": 0.9735449735449736,
+        "clipped_relative_axis_error": 0.22067117117761098,
+        "objective": 0.9347017446004566,
+        "unbound": 5,
+        "objects": 135,
+        "images": 27
+      },
+      "pushpins": {
+        "point_F1": 0.9983922829581994,
+        "clipped_relative_axis_error": 0.02584200798093277,
+        "objective": 0.993545424770373,
+        "unbound": 0,
+        "objects": 930,
+        "images": 31
+      },
+      "splicing_connectors": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.022460536626598665,
+        "objective": 0.9955078926746803,
+        "unbound": 0,
+        "objects": 290,
+        "images": 30
+      },
+      "screw_bag": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.20135675376583875,
+        "objective": 0.9597286492468323,
+        "unbound": 0,
+        "objects": 180,
+        "images": 30
+      },
+      "Sticks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.01028258837281819,
+        "objective": 0.9979434823254364,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Fruits": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.09375808515854125,
+        "objective": 0.9812483829682919,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      },
+      "Tools": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.12050942763600503,
+        "objective": 0.9758981144727991,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Cookies": {
+        "point_F1": 0.9868421052631579,
+        "clipped_relative_axis_error": 0.11036815364048302,
+        "objective": 0.9674000534824297,
+        "unbound": 0,
+        "objects": 72,
+        "images": 15
+      },
+      "Tapes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.006589373932486181,
+        "objective": 0.9986821252135029,
+        "unbound": 0,
+        "objects": 30,
+        "images": 15
+      },
+      "Stationery": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.04125509115252994,
+        "objective": 0.9917489817694941,
+        "unbound": 0,
+        "objects": 60,
+        "images": 15
+      },
+      "Ropes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.047959076686476546,
+        "objective": 0.9904081846627047,
+        "unbound": 0,
+        "objects": 36,
+        "images": 12
+      },
+      "Blocks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.041628417186601305,
+        "objective": 0.9916743165626798,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Dishes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.06595374166370295,
+        "objective": 0.9868092516672595,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Balls": {
+        "point_F1": 0.9777777777777779,
+        "clipped_relative_axis_error": 0.2199220040262885,
+        "objective": 0.9382378214169647,
+        "unbound": 1,
+        "objects": 75,
+        "images": 15
+      }
+    },
+    "any_class_r0.08": {
+      "breakfast_box": {
+        "point_F1": 0.9661919939052485,
+        "clipped_relative_axis_error": 0.28257955332470736,
+        "objective": 0.9164376844592573,
+        "unbound": 0,
+        "objects": 983,
+        "images": 29
+      },
+      "juice_bottle": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.22581269165818485,
+        "objective": 0.954837461668363,
+        "unbound": 0,
+        "objects": 135,
+        "images": 27
+      },
+      "pushpins": {
+        "point_F1": 0.9983922829581994,
+        "clipped_relative_axis_error": 0.02584200798093277,
+        "objective": 0.993545424770373,
+        "unbound": 0,
+        "objects": 930,
+        "images": 31
+      },
+      "splicing_connectors": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.022460536626598665,
+        "objective": 0.9955078926746803,
+        "unbound": 0,
+        "objects": 290,
+        "images": 30
+      },
+      "screw_bag": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.20135675376583875,
+        "objective": 0.9597286492468323,
+        "unbound": 0,
+        "objects": 180,
+        "images": 30
+      },
+      "Sticks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.01028258837281819,
+        "objective": 0.9979434823254364,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Fruits": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.09375808515854125,
+        "objective": 0.9812483829682919,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      },
+      "Tools": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.12050942763600503,
+        "objective": 0.9758981144727991,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Cookies": {
+        "point_F1": 0.9868421052631579,
+        "clipped_relative_axis_error": 0.11036815364048302,
+        "objective": 0.9674000534824297,
+        "unbound": 0,
+        "objects": 72,
+        "images": 15
+      },
+      "Tapes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.006589373932486181,
+        "objective": 0.9986821252135029,
+        "unbound": 0,
+        "objects": 30,
+        "images": 15
+      },
+      "Stationery": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.04125509115252994,
+        "objective": 0.9917489817694941,
+        "unbound": 0,
+        "objects": 60,
+        "images": 15
+      },
+      "Ropes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.047959076686476546,
+        "objective": 0.9904081846627047,
+        "unbound": 0,
+        "objects": 36,
+        "images": 12
+      },
+      "Blocks": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.041628417186601305,
+        "objective": 0.9916743165626798,
+        "unbound": 0,
+        "objects": 90,
+        "images": 15
+      },
+      "Dishes": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.06595374166370295,
+        "objective": 0.9868092516672595,
+        "unbound": 0,
+        "objects": 45,
+        "images": 15
+      },
+      "Balls": {
+        "point_F1": 1.0,
+        "clipped_relative_axis_error": 0.2184078652020266,
+        "objective": 0.9563184269595948,
+        "unbound": 0,
+        "objects": 75,
+        "images": 15
+      }
+    }
+  },
+  "images": 294,
+  "test_or_CAL_used": false
+}

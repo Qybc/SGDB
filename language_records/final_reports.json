@@ -1,0 +1,5583 @@
+[
+  {
+    "source_trace_sha256": "2fbaf31d762ddc16e0d71fe280557b197e144fc8cabd57989e95129576791ca4",
+    "decision": "anomaly",
+    "score": 6.130061173823091,
+    "threshold": 4.4300464912707715,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E05"
+        ],
+        "text": "The screw length exceeds the upper bound."
+      }
+    ],
+    "text": "The screw length exceeds the upper bound. [E05]",
+    "evidence": {
+      "E05": {
+        "name": "short screw length",
+        "observed": 428.2201823710744,
+        "requirement": {
+          "operator": "interval",
+          "lo": 196.0817435993071,
+          "hi": 363.1222189598398,
+          "scale": 111.36031690702183
+        },
+        "observed_display": "428.22 px",
+        "requirement_display": "[196.08, 363.12] px",
+        "source_paths": [
+          "facts.measurements.short_screw_length"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.5845705653440881,
+        "normalized_score": 6.069367498834743
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E05\"],\n      \"text\": \"The screw length exceeds the upper bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E05"
+          ],
+          "text": "The screw length exceeds the upper bound."
+        }
+      ],
+      "rendered_text": "The screw length exceeds the upper bound. [E05]",
+      "citations": [
+        "E05"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "screw_bag/test/logical_anomalies/000.png",
+    "request_id": "0902c9d597bb1d5ab25e88afbbd65930"
+  },
+  {
+    "source_trace_sha256": "2fbaf31d762ddc16e0d71fe280557b197e144fc8cabd57989e95129576791ca4",
+    "decision": "anomaly",
+    "score": 6.130061173823091,
+    "threshold": 4.4300464912707715,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E05"
+        ],
+        "text": "短螺丝长度超出上限范围。"
+      }
+    ],
+    "text": "短螺丝长度超出上限范围。 [E05]",
+    "evidence": {
+      "E05": {
+        "name": "短螺丝长度",
+        "observed": 428.2201823710744,
+        "requirement": {
+          "operator": "interval",
+          "lo": 196.0817435993071,
+          "hi": 363.1222189598398,
+          "scale": 111.36031690702183
+        },
+        "observed_display": "428.22 px",
+        "requirement_display": "[196.08, 363.12] px",
+        "source_paths": [
+          "facts.measurements.short_screw_length"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.5845705653440881,
+        "normalized_score": 6.069367498834743
+      }
+    },
+    "execution_state": "所选分数贡献足以支持已记录的报警。",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E05\"],\n      \"text\": \"短螺丝长度超出上限范围。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E05"
+          ],
+          "text": "短螺丝长度超出上限范围。"
+        }
+      ],
+      "rendered_text": "短螺丝长度超出上限范围。 [E05]",
+      "citations": [
+        "E05"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "screw_bag/test/logical_anomalies/000.png",
+    "request_id": "e729f0376e41cf3bf97e2cede0e2c009"
+  },
+  {
+    "source_trace_sha256": "657541027bab0f4c6c0d43f0ca37ead10946b529eabe648ff36be317534de3be",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 1.6748103573695678,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The bolt count is below the required count."
+      }
+    ],
+    "text": "The bolt count is below the required count. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "bolt count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "0",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.bolt"
+        ],
+        "object_indices": [],
+        "residual": 2.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The bolt count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The bolt count is below the required count."
+        }
+      ],
+      "rendered_text": "The bolt count is below the required count. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools/test/logical_anomalies/Quantity/001.jpg",
+    "request_id": "e4f7307d7a6de9e69f7cca49c5555148"
+  },
+  {
+    "source_trace_sha256": "657541027bab0f4c6c0d43f0ca37ead10946b529eabe648ff36be317534de3be",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 1.6748103573695678,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "螺栓数量低于规定数量"
+      }
+    ],
+    "text": "螺栓数量低于规定数量 [E01]",
+    "evidence": {
+      "E01": {
+        "name": "螺栓数量",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "0",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.bolt"
+        ],
+        "object_indices": [],
+        "residual": 2.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "所选分数贡献足以支持已记录的报警。",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"螺栓数量低于规定数量\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "螺栓数量低于规定数量"
+        }
+      ],
+      "rendered_text": "螺栓数量低于规定数量 [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools/test/logical_anomalies/Quantity/001.jpg",
+    "request_id": "c88f608b2ff67f6a4ea659a46ff915b0"
+  },
+  {
+    "source_trace_sha256": "3b023eadde37423a6a9b55da49fac19a6eaff2d8d2a6dded8b685e9d4cf0b5ad",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+      }
+    ],
+    "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+    "evidence": {
+      "E01": {
+        "name": "yellow cookie count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.yellow_cookie"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "black cookie count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_cookie"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square dish count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.square_dish"
+        ],
+        "object_indices": [
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E04": {
+        "name": "round dish count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.round_dish"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+        }
+      ],
+      "rendered_text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies/test/logical_anomalies/Quantity/001.jpg",
+    "request_id": "72d827b69c85dcae2bb4f2771ce842be"
+  },
+  {
+    "source_trace_sha256": "3b023eadde37423a6a9b55da49fac19a6eaff2d8d2a6dded8b685e9d4cf0b5ad",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。"
+      }
+    ],
+    "text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。 [E01][E02][E03][E04]",
+    "evidence": {
+      "E01": {
+        "name": "黄饼干数量",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.yellow_cookie"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "黑饼干数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_cookie"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "方盘数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.square_dish"
+        ],
+        "object_indices": [
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E04": {
+        "name": "圆盘数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.round_dish"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "已执行谓词的残差均为零。",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"黄饼干、黑饼干、方盘和圆盘的数量均满足要求。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。"
+        }
+      ],
+      "rendered_text": "黄饼干、黑饼干、方盘和圆盘的数量均满足要求。 [E01][E02][E03][E04]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies/test/logical_anomalies/Quantity/001.jpg",
+    "request_id": "7be95debd1ad62acd1250e06ffa5be4b"
+  },
+  {
+    "source_trace_sha256": "06b5967d84eda6e73720dfbbddca452f654c82d2d0a05e4eda7022ffb236dd31",
+    "decision": "anomaly",
+    "score": 7.53937012851318,
+    "threshold": 4.125412886477891,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "text": "The green red length ratio is below the lower bound. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "green red length ratio",
+        "observed": 0.9803444206207885,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.85745339582561,
+          "hi": 2.0796698641972555,
+          "scale": 0.19843194506357756
+        },
+        "observed_display": "0.98034",
+        "requirement_display": "[1.8575, 2.0797]",
+        "source_paths": [
+          "facts.measurements.green_red_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 4.420200461794576,
+        "normalized_score": 7.464722899518
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is below the lower bound."
+        }
+      ],
+      "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes/test/logical_anomalies/Length/000.jpg",
+    "request_id": "1163cd6e355c5d03dd103288676c8c59"
+  },
+  {
+    "source_trace_sha256": "06b5967d84eda6e73720dfbbddca452f654c82d2d0a05e4eda7022ffb236dd31",
+    "decision": "anomaly",
+    "score": 7.53937012851318,
+    "threshold": 4.125412886477891,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "绿红胶带长度比低于下限阈值。"
+      }
+    ],
+    "text": "绿红胶带长度比低于下限阈值。 [E03]",
+    "evidence": {
+      "E03": {
+        "name": "绿/红胶带长度比",
+        "observed": 0.9803444206207885,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.85745339582561,
+          "hi": 2.0796698641972555,
+          "scale": 0.19843194506357756
+        },
+        "observed_display": "0.98034",
+        "requirement_display": "[1.8575, 2.0797]",
+        "source_paths": [
+          "facts.measurements.green_red_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 4.420200461794576,
+        "normalized_score": 7.464722899518
+      }
+    },
+    "execution_state": "所选分数贡献足以支持已记录的报警。",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"绿红胶带长度比低于下限阈值。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "绿红胶带长度比低于下限阈值。"
+        }
+      ],
+      "rendered_text": "绿红胶带长度比低于下限阈值。 [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes/test/logical_anomalies/Length/000.jpg",
+    "request_id": "b5de5768bad9744a584c10d1a870d204"
+  },
+  {
+    "source_trace_sha256": "e730e2ad18a95082b6262f9a756a18d7e607ad15e1c3f3cb3e85674b51df9016",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied."
+      }
+    ],
+    "text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied. [E01][E02][E03][E04]",
+    "evidence": {
+      "E01": {
+        "name": "black pencil count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_pencil"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "blue eraser count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.blue_eraser"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "red pencil count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_pencil"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E04": {
+        "name": "red eraser count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_eraser"
+        ],
+        "object_indices": [
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied."
+        }
+      ],
+      "rendered_text": "All required counts for black pencils, blue erasers, red pencils, and red erasers are satisfied. [E01][E02][E03][E04]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Blurry_CD/test/good/001.jpg",
+    "request_id": "86c039cc367c6fb7d2ed091a362172f8"
+  },
+  {
+    "source_trace_sha256": "e730e2ad18a95082b6262f9a756a18d7e607ad15e1c3f3cb3e85674b51df9016",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "所有文具数量均符合要求。"
+      }
+    ],
+    "text": "所有文具数量均符合要求。 [E01][E02][E03][E04]",
+    "evidence": {
+      "E01": {
+        "name": "黑铅笔数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_pencil"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "蓝橡皮数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.blue_eraser"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "红铅笔数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_pencil"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E04": {
+        "name": "红橡皮数量",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_eraser"
+        ],
+        "object_indices": [
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "已执行谓词的残差均为零。",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"所有文具数量均符合要求。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "text": "所有文具数量均符合要求。"
+        }
+      ],
+      "rendered_text": "所有文具数量均符合要求。 [E01][E02][E03][E04]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Blurry_CD/test/good/001.jpg",
+    "request_id": "94f6fb1cccdfeb9f3af48258ef299b3d"
+  },
+  {
+    "source_trace_sha256": "70c39d7822526d14666d6b215ae238e5b02e6e920be9b820fead1dc35582ff9b",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "evidence": {
+      "E03": {
+        "name": "spoon count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.spoon"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "utensil order",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The spoon count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The utensil order measurement is unavailable."
+        }
+      ],
+      "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+      "citations": [
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes/test/logical_anomalies/Mix/000.jpg",
+    "request_id": "f2b91c16958574507488cc639bf576ca"
+  },
+  {
+    "source_trace_sha256": "70c39d7822526d14666d6b215ae238e5b02e6e920be9b820fead1dc35582ff9b",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "勺子数量低于所需数量。"
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "餐具顺序信息缺失，导致测量不可用。"
+      }
+    ],
+    "text": "勺子数量低于所需数量。 [E03] 餐具顺序信息缺失，导致测量不可用。 [E04]",
+    "evidence": {
+      "E03": {
+        "name": "勺子数量",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.spoon"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E04": {
+        "name": "测量可用性",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "餐具顺序",
+        "requirement_display": "必需操作数均可用",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "所选分数贡献足以支持已记录的报警。",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"勺子数量低于所需数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"餐具顺序信息缺失，导致测量不可用。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "勺子数量低于所需数量。"
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "餐具顺序信息缺失，导致测量不可用。"
+        }
+      ],
+      "rendered_text": "勺子数量低于所需数量。 [E03] 餐具顺序信息缺失，导致测量不可用。 [E04]",
+      "citations": [
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes/test/logical_anomalies/Mix/000.jpg",
+    "request_id": "7ddecb84f8568404ae75a0497b6acf4d"
+  },
+  {
+    "source_trace_sha256": "2170d964869d145de522f6422dbb06eb7bc4b469d2699018e6ac4d0490369c51",
+    "decision": "anomaly",
+    "score": 4.165858110855125,
+    "threshold": 4.125412886477891,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The green tape count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red tape count is above the required count."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is unavailable."
+      }
+    ],
+    "text": "The green tape count is below the required count. [E01] The red tape count is above the required count. [E02] The green red length ratio is unavailable. [E03]",
+    "evidence": {
+      "E01": {
+        "name": "green tape count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.green_tape"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E02": {
+        "name": "red tape count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "2",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_tape"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E03": {
+        "name": "measurement unavailable",
+        "observed": [
+          "green_red_length_ratio"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "green red length ratio",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The green tape count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red tape count is above the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The green tape count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The red tape count is above the required count."
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is unavailable."
+        }
+      ],
+      "rendered_text": "The green tape count is below the required count. [E01] The red tape count is above the required count. [E02] The green red length ratio is unavailable. [E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes/test/logical_anomalies/Type/016.jpg",
+    "request_id": "b7d107cacc1e8967e5252154a7b26362"
+  },
+  {
+    "source_trace_sha256": "2170d964869d145de522f6422dbb06eb7bc4b469d2699018e6ac4d0490369c51",
+    "decision": "anomaly",
+    "score": 4.165858110855125,
+    "threshold": 4.125412886477891,
+    "language": "zh",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "绿胶带数量低于规定数量。"
+      },
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "红胶带数量超出规定数量。"
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "测量数据缺失，无法获取绿红胶带长度比。"
+      }
+    ],
+    "text": "绿胶带数量低于规定数量。 [E01] 红胶带数量超出规定数量。 [E02] 测量数据缺失，无法获取绿红胶带长度比。 [E03]",
+    "evidence": {
+      "E01": {
+        "name": "绿胶带数量",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.green_tape"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E02": {
+        "name": "红胶带数量",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "2",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_tape"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E03": {
+        "name": "测量可用性",
+        "observed": [
+          "green_red_length_ratio"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "绿/红胶带长度比",
+        "requirement_display": "必需操作数均可用",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "所选分数贡献足以支持已记录的报警。",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"绿胶带数量低于规定数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"红胶带数量超出规定数量。\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"测量数据缺失，无法获取绿红胶带长度比。\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "绿胶带数量低于规定数量。"
+        },
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "红胶带数量超出规定数量。"
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "测量数据缺失，无法获取绿红胶带长度比。"
+        }
+      ],
+      "rendered_text": "绿胶带数量低于规定数量。 [E01] 红胶带数量超出规定数量。 [E02] 测量数据缺失，无法获取绿红胶带长度比。 [E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes/test/logical_anomalies/Type/016.jpg",
+    "request_id": "68f48f781b0eeb368d1d4586477a27fc"
+  },
+  {
+    "source_trace_sha256": "088451c87b263ecc9c4818108387e512ac1eadba03b62aa7c9abf3ecc17a583c",
+    "decision": "anomaly",
+    "score": 2.398402762306747,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "Cell occupancy shows a deviation from the required zero error."
+      }
+    ],
+    "text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+    "evidence": {
+      "E06": {
+        "name": "cell occupancy error",
+        "observed": 1.0,
+        "requirement": {
+          "operator": "zero_error"
+        },
+        "observed_display": "1",
+        "requirement_display": "{\"operator\": \"zero_error\"}",
+        "source_paths": [
+          "facts.relation_features.cell_occupancy_error"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 2.3513752571634776
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"Cell occupancy shows a deviation from the required zero error.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E06"
+          ],
+          "text": "Cell occupancy shows a deviation from the required zero error."
+        }
+      ],
+      "rendered_text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+      "citations": [
+        "E06"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Balls/test/good/035.jpg",
+    "request_id": "82dd7fda20e73daac7f7eecfc191b05c"
+  },
+  {
+    "source_trace_sha256": "45b0c9e84afe8355f292b8af31e681a5106dd4946329e7b518794c385bbe758d",
+    "decision": "anomaly",
+    "score": 5.140947093651882,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "Cell occupancy shows a deviation from the required zero error."
+      }
+    ],
+    "text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+    "evidence": {
+      "E06": {
+        "name": "cell occupancy error",
+        "observed": 3.0,
+        "requirement": {
+          "operator": "zero_error"
+        },
+        "observed_display": "3",
+        "requirement_display": "{\"operator\": \"zero_error\"}",
+        "source_paths": [
+          "facts.relation_features.cell_occupancy_error"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "residual": 3.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"Cell occupancy shows a deviation from the required zero error.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E06"
+          ],
+          "text": "Cell occupancy shows a deviation from the required zero error."
+        }
+      ],
+      "rendered_text": "Cell occupancy shows a deviation from the required zero error. [E06]",
+      "citations": [
+        "E06"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Balls_Blurry_CD/test/logical_anomalies/Relation/002.jpg",
+    "request_id": "e7b2780e0ec405670b49719c9af3b4a7"
+  },
+  {
+    "source_trace_sha256": "86473a457190b6024acc405bd941c341451170e44e9067c82407820b8b55d813",
+    "decision": "anomaly",
+    "score": 3.126463342959946,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The color row order margin deviates from the requirement."
+      }
+    ],
+    "text": "The color row order margin deviates from the requirement. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "color row order margin",
+        "observed": -0.0040638606676342,
+        "requirement": {
+          "operator": "nonnegative"
+        },
+        "observed_display": "-0.0040639",
+        "requirement_display": "{\"operator\": \"nonnegative\"}",
+        "source_paths": [
+          "facts.relation_features.color_row_order_margin"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "residual": 0.0040638606676342,
+        "normalized_score": 3.048586298391057
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The color row order margin deviates from the requirement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The color row order margin deviates from the requirement."
+        }
+      ],
+      "rendered_text": "The color row order margin deviates from the requirement. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Balls_Cable_BG/test/logical_anomalies/Placement/018.jpg",
+    "request_id": "5e577997bb06233cf3e24c14d0d9c90b"
+  },
+  {
+    "source_trace_sha256": "c95b120cbc94607b2e8720049a778879db3f91ef8d5276f81e11c561ce797719",
+    "decision": "anomaly",
+    "score": 3.4018130114762526,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The color row order margin deviates from the requirement."
+      }
+    ],
+    "text": "The color row order margin deviates from the requirement. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "color row order margin",
+        "observed": -0.29519174145525634,
+        "requirement": {
+          "operator": "nonnegative"
+        },
+        "observed_display": "-0.29519",
+        "requirement_display": "{\"operator\": \"nonnegative\"}",
+        "source_paths": [
+          "facts.relation_features.color_row_order_margin"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "residual": 0.29519174145525634,
+        "normalized_score": 3.3397141791786793
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The color row order margin deviates from the requirement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The color row order margin deviates from the requirement."
+        }
+      ],
+      "rendered_text": "The color row order margin deviates from the requirement. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Balls_Low-light_CD/test/logical_anomalies/Relation/027.jpg",
+    "request_id": "9d2044af0d2385921957145477cc7225"
+  },
+  {
+    "source_trace_sha256": "27018bf5f9920c5e907e6e34ba19912351bf1b67d4144830a78c42ef09d1318b",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements."
+      }
+    ],
+    "text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "orange ball count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.orange_ball"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "white ball count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.white_ball"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "transparent case count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.transparent_case"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The counts of orange balls, white balls, and transparent cases each satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Balls_Mesh_BG/test/good/049.jpg",
+    "request_id": "a4f8d4067a007805c8916d84690f4177"
+  },
+  {
+    "source_trace_sha256": "bbb076cfca8cca8ee81f69c14721e041ed24e44e2a9dca7578f23b5a123a75fe",
+    "decision": "anomaly",
+    "score": 5.145412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The circle block bin deviates from the requirement."
+      }
+    ],
+    "text": "The circle block bin deviates from the requirement. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "circle block bin",
+        "observed": [
+          0.8304343971631205,
+          0.8362447331460674
+        ],
+        "requirement": {
+          "operator": "every_half_open",
+          "lo": 0.0,
+          "hi": 0.3333333333333333,
+          "axis": 1
+        },
+        "observed_display": "[0.83043, 0.83624]",
+        "requirement_display": "{\"operator\": \"every_half_open\", \"lo\": 0.0, \"hi\": 0.3333333333333333, \"axis\": 1}",
+        "source_paths": [
+          "facts.attributes.circle_block_instances"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The circle block bin deviates from the requirement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The circle block bin deviates from the requirement."
+        }
+      ],
+      "rendered_text": "The circle block bin deviates from the requirement. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Blocks/test/logical_anomalies/Placement/049.jpg",
+    "request_id": "5ed40dfa283a772f1490d33bead38dbd"
+  },
+  {
+    "source_trace_sha256": "8891025fe07136fe741a42289b0b5882d9460a06bc9f6fc065666e3a4b32cb4b",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "circle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.circle_block"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "triangle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.triangle_block"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.square_block"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Blocks_Blurry_CD/test/good/014.jpg",
+    "request_id": "1310b5b322309e3cba4922e4ef17d36d"
+  },
+  {
+    "source_trace_sha256": "7cc0277a22d45a86edd761c7636fd479679e07842f61ab0584f67558b33b3734",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "circle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.circle_block"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "triangle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.triangle_block"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.square_block"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Blocks_Cable_BG/test/logical_anomalies/Type/010.jpg",
+    "request_id": "3459ac1591cb7b9d242038947b3ada69"
+  },
+  {
+    "source_trace_sha256": "7e59e81f38dde1b3a9b12e8a63d5a27e35be959d65e1f98276feb25afb8aa9f0",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "circle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.circle_block"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "triangle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.triangle_block"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.square_block"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Blocks_Low-light_CD/test/good/045.jpg",
+    "request_id": "f7cac7fa3734cc4f84787e109768f6d4"
+  },
+  {
+    "source_trace_sha256": "9e6230c3235bdf4fb14c9e3286e1129fbe098bfd187e158174b0cea5bfe69267",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+      }
+    ],
+    "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "circle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.circle_block"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "triangle block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.triangle_block"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square block count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.square_block"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The counts of circle, triangle, and square blocks each satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The counts of circle, triangle, and square blocks each satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Blocks_Mesh_BG/test/good/049.jpg",
+    "request_id": "c19bbe897dc3665c3048dd720b51da28"
+  },
+  {
+    "source_trace_sha256": "9a9cf6feb7856301de4faa594bfa1ab8e79e6632297747550e87d51877df25e0",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The black cookie count exceeds the required amount."
+      }
+    ],
+    "text": "The black cookie count exceeds the required amount. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "black cookie count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "2",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_cookie"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The black cookie count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The black cookie count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The black cookie count exceeds the required amount. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies/test/logical_anomalies/Quantity/004.jpg",
+    "request_id": "be82f07692f45c2d405d2865d56f2b8e"
+  },
+  {
+    "source_trace_sha256": "8693f237907795fee1ad15fa86bab0b0e35369a9ab7217e9d36ae7a9772330c2",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 2.3748890097351123,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The round dish count exceeds the required amount."
+      }
+    ],
+    "text": "The round dish count exceeds the required amount. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "round dish count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "2",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.round_dish"
+        ],
+        "object_indices": [
+          4,
+          5
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The round dish count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The round dish count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The round dish count exceeds the required amount. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies_Blurry_CD/test/good/036.jpg",
+    "request_id": "6a1d19b5d3c5a3f84bbcbc7dbed342ec"
+  },
+  {
+    "source_trace_sha256": "dfa3ea8da93dde33673f4236842b0b532372448f0728728bdb86191c2d718de5",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The yellow cookie count is below the required count."
+      }
+    ],
+    "text": "The yellow cookie count is below the required count. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "yellow cookie count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "1",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.yellow_cookie"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The yellow cookie count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The yellow cookie count is below the required count."
+        }
+      ],
+      "rendered_text": "The yellow cookie count is below the required count. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies_Cable_BG/test/logical_anomalies/Quantity/008.jpg",
+    "request_id": "d48f342871ce7929c08235c15dfc43a4"
+  },
+  {
+    "source_trace_sha256": "45628a3a8430c9aa38c0335792803cfc396b640c59ddbc665d0a263b9f50820f",
+    "decision": "anomaly",
+    "score": 4.21289770655322,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The black cookie count exceeds the required amount."
+      }
+    ],
+    "text": "The black cookie count exceeds the required amount. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "black cookie count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "2",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_cookie"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The black cookie count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The black cookie count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The black cookie count exceeds the required amount. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies_Low-light_CD/test/logical_anomalies/Relation/009.jpg",
+    "request_id": "49ff650e7bbb3584bc584c7005294381"
+  },
+  {
+    "source_trace_sha256": "3d3081da9f4ffb0083e1518788f56a965e4325d930a50109e35c6f5670d3293b",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03",
+          "E04"
+        ],
+        "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+      }
+    ],
+    "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+    "evidence": {
+      "E01": {
+        "name": "yellow cookie count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.yellow_cookie"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "black cookie count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.black_cookie"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "square dish count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.square_dish"
+        ],
+        "object_indices": [
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E04": {
+        "name": "round dish count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.round_dish"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\", \"E04\"],\n      \"text\": \"All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03",
+            "E04"
+          ],
+          "text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria."
+        }
+      ],
+      "rendered_text": "All required counts are satisfied: yellow cookies, black cookies, square dishes, and round dishes each meet their specified criteria. [E01][E02][E03][E04]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Cookies_Mesh_BG/test/logical_anomalies/Quantity/002.jpg",
+    "request_id": "bb5e0b55e24237aec341b0ce8cf3a503"
+  },
+  {
+    "source_trace_sha256": "18459b7ec46c9aeee285428a522f7e2ebe4e458f1330aa5e4650e54f3809be06",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The fork, plate, and spoon counts all satisfy their respective requirements."
+      }
+    ],
+    "text": "The fork, plate, and spoon counts all satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "fork count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.fork"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "plate count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.plate"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "spoon count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.spoon"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The fork, plate, and spoon counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The fork, plate, and spoon counts all satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The fork, plate, and spoon counts all satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes/test/good/025.jpg",
+    "request_id": "f6d7931f767c51a01fc2753b144bd093"
+  },
+  {
+    "source_trace_sha256": "a061eb4b001ab4f70e73e7edab020a74aae2de44749d4914b60e308a09d4ebee",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "evidence": {
+      "E03": {
+        "name": "spoon count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.spoon"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "utensil order",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The spoon count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The utensil order measurement is unavailable."
+        }
+      ],
+      "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+      "citations": [
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes_Blurry_CD/test/good/004.jpg",
+    "request_id": "f1844d6e74434f344fbaa5c04072f488"
+  },
+  {
+    "source_trace_sha256": "d9e4014fbd3b96d12100aeae4f25915425fa5cfe21cfc477a88482fa24fe522f",
+    "decision": "anomaly",
+    "score": 2.4178618637973,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The fork count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement for utensil order is unavailable."
+      }
+    ],
+    "text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+    "evidence": {
+      "E01": {
+        "name": "fork count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.fork"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 2.3513752571634776
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "utensil order",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 1.9459101490553135
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The fork count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement for utensil order is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The fork count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The measurement for utensil order is unavailable."
+        }
+      ],
+      "rendered_text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+      "citations": [
+        "E01",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes_Cable_BG/test/logical_anomalies/Type/033.jpg",
+    "request_id": "a1d7ae1d0be19f0290410fe5f717723b"
+  },
+  {
+    "source_trace_sha256": "785778ddcc7e8787862e9499f23a2ccda8403242a3b9d5d655cf63072b0f27cc",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The spoon count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The utensil order measurement is unavailable."
+      }
+    ],
+    "text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+    "evidence": {
+      "E03": {
+        "name": "spoon count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.spoon"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "utensil order",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The spoon count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The utensil order measurement is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The spoon count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The utensil order measurement is unavailable."
+        }
+      ],
+      "rendered_text": "The spoon count is below the required count. [E03] The utensil order measurement is unavailable. [E04]",
+      "citations": [
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes_Low-light_CD/test/logical_anomalies/Type/026.jpg",
+    "request_id": "ccb0dbd2fb9e7a72a88e42301fa87972"
+  },
+  {
+    "source_trace_sha256": "70f67c30af84b2a4074d7dd539b628c170b737efe88b676c7988847977838f7e",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The fork count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement for utensil order is unavailable."
+      }
+    ],
+    "text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+    "evidence": {
+      "E01": {
+        "name": "fork count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "0",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.fork"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "utensil_order"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "utensil order",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The fork count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement for utensil order is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The fork count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The measurement for utensil order is unavailable."
+        }
+      ],
+      "rendered_text": "The fork count is below the required count. [E01] The measurement for utensil order is unavailable. [E04]",
+      "citations": [
+        "E01",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Dishes_Mesh_BG/test/logical_anomalies/Relation/033.jpg",
+    "request_id": "cfeeb1cdc8115207a1029201227291ac"
+  },
+  {
+    "source_trace_sha256": "846ab0daa329426a3cd39e253767677b47ce4332c2c7fedff9f7059fdd56941d",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The kiwifruit count exceeds the required amount."
+      }
+    ],
+    "text": "The kiwifruit count exceeds the required amount. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "kiwifruit count",
+        "observed": 3,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "3",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.kiwifruit"
+        ],
+        "object_indices": [
+          4,
+          5,
+          6
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The kiwifruit count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The kiwifruit count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The kiwifruit count exceeds the required amount. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Fruits/test/logical_anomalies/Quantity/037.jpg",
+    "request_id": "a97102b03b326417f7510f1f18110163"
+  },
+  {
+    "source_trace_sha256": "b9c8e783d6832c89551c3bf1e9e48d8240a02f8ecab305992e1c4bec31de1749",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The orange count exceeds the required amount."
+      }
+    ],
+    "text": "The orange count exceeds the required amount. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "orange count",
+        "observed": 4,
+        "requirement": {
+          "operator": "equal",
+          "value": 3
+        },
+        "observed_display": "4",
+        "requirement_display": "3",
+        "source_paths": [
+          "facts.counts.orange"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The orange count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The orange count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The orange count exceeds the required amount. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Fruits_Blurry_CD/test/logical_anomalies/Quantity/025.jpg",
+    "request_id": "eefb5d06ddec8ca2f7ec71e056bc5878"
+  },
+  {
+    "source_trace_sha256": "06d51276a7571729d32c7d3d51c409040fbc4f42aaa8785ee26e191b356887d8",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The orange count exceeds the required amount."
+      }
+    ],
+    "text": "The orange count exceeds the required amount. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "orange count",
+        "observed": 4,
+        "requirement": {
+          "operator": "equal",
+          "value": 3
+        },
+        "observed_display": "4",
+        "requirement_display": "3",
+        "source_paths": [
+          "facts.counts.orange"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The orange count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The orange count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The orange count exceeds the required amount. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Fruits_Cable_BG/test/logical_anomalies/Quantity/026.jpg",
+    "request_id": "9f1ae81548da8f55518fc3c38f054f4d"
+  },
+  {
+    "source_trace_sha256": "61183737f3a74bc3be89ef179fd0ce40a25227cae68c47902a305292f80986e0",
+    "decision": "anomaly",
+    "score": 5.145412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The kiwifruit count exceeds the required amount."
+      }
+    ],
+    "text": "The kiwifruit count exceeds the required amount. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "kiwifruit count",
+        "observed": 4,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "4",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.kiwifruit"
+        ],
+        "object_indices": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The kiwifruit count exceeds the required amount.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The kiwifruit count exceeds the required amount."
+        }
+      ],
+      "rendered_text": "The kiwifruit count exceeds the required amount. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Fruits_Low-light_CD/test/logical_anomalies/Quantity/047.jpg",
+    "request_id": "ac7d64ed3b7212a59b93364148dc777d"
+  },
+  {
+    "source_trace_sha256": "f04a23bd071cac0e27ace93cb0b63fe90509d1c163d0ff3239d290f2dadd3e27",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The orange and kiwifruit counts both satisfy their respective requirements."
+      }
+    ],
+    "text": "The orange and kiwifruit counts both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "orange count",
+        "observed": 3,
+        "requirement": {
+          "operator": "equal",
+          "value": 3
+        },
+        "observed_display": "3",
+        "requirement_display": "3",
+        "source_paths": [
+          "facts.counts.orange"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "kiwifruit count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.kiwifruit"
+        ],
+        "object_indices": [
+          3,
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The orange and kiwifruit counts both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The orange and kiwifruit counts both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The orange and kiwifruit counts both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Fruits_Mesh_BG/test/logical_anomalies/Type/015.jpg",
+    "request_id": "737496dc3703385ecd3beb70a3bb73da"
+  },
+  {
+    "source_trace_sha256": "df1b2b1ce694fbe8b652582be81c0791278dc05ed52ae9c457ca8457b9367d82",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "rope count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.rope"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "reference stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.reference_stick"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "text label count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.text_label"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Ropes/test/logical_anomalies/Length/014.jpg",
+    "request_id": "ea0ed3a54e6af461273d21f4d5e6018b"
+  },
+  {
+    "source_trace_sha256": "7c144e6717a99d29f69a54c278af0ea5a6106b863ca59ee5456c94c0336ca307",
+    "decision": "anomaly",
+    "score": 3.4688554022672418,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The rope reference length ratio exceeds its upper bound."
+      }
+    ],
+    "text": "The rope reference length ratio exceeds its upper bound. [E06]",
+    "evidence": {
+      "E06": {
+        "name": "rope reference length ratio",
+        "observed": 1.4371016113397268,
+        "requirement": {
+          "operator": "interval",
+          "lo": 0.16025155445709993,
+          "hi": 1.1736311238645531,
+          "scale": 0.6755863796049688
+        },
+        "observed_display": "1.4371",
+        "requirement_display": "[0.16025, 1.1736]",
+        "source_paths": [
+          "facts.measurements.rope_reference_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.3899878615510736,
+        "normalized_score": 3.4345102992744967
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The rope reference length ratio exceeds its upper bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E06"
+          ],
+          "text": "The rope reference length ratio exceeds its upper bound."
+        }
+      ],
+      "rendered_text": "The rope reference length ratio exceeds its upper bound. [E06]",
+      "citations": [
+        "E06"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Ropes_Blurry_CD/test/logical_anomalies/Length/028.jpg",
+    "request_id": "4dc4104993589df63b185071789fb493"
+  },
+  {
+    "source_trace_sha256": "eeb1053ac4b2015d94609af1b0c521c10934cee1501ae70952f25b4d164d1661",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 1.9653692505458666,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "rope count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.rope"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "reference stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.reference_stick"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "text label count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.text_label"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Ropes_Cable_BG/test/good/020.jpg",
+    "request_id": "a56af2691c510492e469f958bd093e3d"
+  },
+  {
+    "source_trace_sha256": "6880da5d4a7a8d581cd55e1db59e77dce1167d3cb20640e10c172a7e9096bcfb",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "rope count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.rope"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "reference stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.reference_stick"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "text label count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.text_label"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Ropes_Low-light_CD/test/logical_anomalies/Length/045.jpg",
+    "request_id": "a079d0d75614be8f0af90175d16bc250"
+  },
+  {
+    "source_trace_sha256": "f6be59ceb6bb85dfc3360a47497e50ba28aca1be464c574dc83344f2215370df",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02",
+          "E03"
+        ],
+        "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+      }
+    ],
+    "text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+    "evidence": {
+      "E01": {
+        "name": "rope count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.rope"
+        ],
+        "object_indices": [
+          0
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "reference stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.reference_stick"
+        ],
+        "object_indices": [
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E03": {
+        "name": "text label count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.text_label"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\", \"E03\"],\n      \"text\": \"The rope, reference stick, and text label counts all satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02",
+            "E03"
+          ],
+          "text": "The rope, reference stick, and text label counts all satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The rope, reference stick, and text label counts all satisfy their respective requirements. [E01][E02][E03]",
+      "citations": [
+        "E01",
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Ropes_Mesh_BG/test/logical_anomalies/Length/044.jpg",
+    "request_id": "307c80af36b3dd5d37e3250798e346f1"
+  },
+  {
+    "source_trace_sha256": "becdf4d03c89531afaf1ceea3dd588fea15d1f0c372409b969db6b74c7522cc8",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E09"
+        ],
+        "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+    "evidence": {
+      "E09": {
+        "name": "blue eraser left of pencil",
+        "observed": [
+          0.2978034445822528,
+          0.10477405247813411
+        ],
+        "requirement": {
+          "operator": "less"
+        },
+        "observed_display": "[0.2978, 0.10477]",
+        "requirement_display": "{\"operator\": \"less\"}",
+        "source_paths": [
+          "facts.attributes.blue_eraser_instances",
+          "facts.attributes.black_pencil_instances"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E09\"],\n      \"text\": \"The blue eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E09"
+          ],
+          "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+        }
+      ],
+      "rendered_text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+      "citations": [
+        "E09"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery/test/logical_anomalies/Placement/044.jpg",
+    "request_id": "68485104023613e8b02f495ba630f55c"
+  },
+  {
+    "source_trace_sha256": "3a6e6d5f86cd6d5411b446c28264711b955246afcaf82d166d3469ed880dcb65",
+    "decision": "anomaly",
+    "score": 4.521715199755132,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E12"
+        ],
+        "text": "The pencil length ratio is below the lower bound."
+      }
+    ],
+    "text": "The pencil length ratio is below the lower bound. [E12]",
+    "evidence": {
+      "E12": {
+        "name": "pencil length ratio",
+        "observed": 0.8206799659317916,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.6772807952916682,
+          "hi": 2.6548270493666344,
+          "scale": 0.6516975027166443
+        },
+        "observed_display": "0.82068",
+        "requirement_display": "[1.6773, 2.6548]",
+        "source_paths": [
+          "facts.measurements.pencil_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          2
+        ],
+        "residual": 1.3144147795397085,
+        "normalized_score": 4.358937217263131
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E12\"],\n      \"text\": \"The pencil length ratio is below the lower bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E12"
+          ],
+          "text": "The pencil length ratio is below the lower bound."
+        }
+      ],
+      "rendered_text": "The pencil length ratio is below the lower bound. [E12]",
+      "citations": [
+        "E12"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Blurry_CD/test/logical_anomalies/Mix/004.jpg",
+    "request_id": "a1aa16a6975c50940c7995d2b2f1e553"
+  },
+  {
+    "source_trace_sha256": "5446a7451ffd94ad4025705df25dbf6330e0df3aaa028258e7cbc5be7e8926a1",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E10"
+        ],
+        "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+    "evidence": {
+      "E10": {
+        "name": "red eraser left of pencil",
+        "observed": [
+          0.8261437319884726,
+          0.6479077518104016
+        ],
+        "requirement": {
+          "operator": "less"
+        },
+        "observed_display": "[0.82614, 0.64791]",
+        "requirement_display": "{\"operator\": \"less\"}",
+        "source_paths": [
+          "facts.attributes.red_eraser_instances",
+          "facts.attributes.red_pencil_instances"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E10\"],\n      \"text\": \"The red eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E10"
+          ],
+          "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+        }
+      ],
+      "rendered_text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+      "citations": [
+        "E10"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Cable_BG/test/logical_anomalies/Placement/025.jpg",
+    "request_id": "25ad0c1bba1565479aa6526070b7178b"
+  },
+  {
+    "source_trace_sha256": "25463b6920de7ce6a792f46cc0091cb7ea9dcd0889e62959a05de00af1365044",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E10"
+        ],
+        "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+    "evidence": {
+      "E10": {
+        "name": "red eraser left of pencil",
+        "observed": [
+          0.8078409090909091,
+          0.6062297077922078
+        ],
+        "requirement": {
+          "operator": "less"
+        },
+        "observed_display": "[0.80784, 0.60623]",
+        "requirement_display": "{\"operator\": \"less\"}",
+        "source_paths": [
+          "facts.attributes.red_eraser_instances",
+          "facts.attributes.red_pencil_instances"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E10\"],\n      \"text\": \"The red eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E10"
+          ],
+          "text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement."
+        }
+      ],
+      "rendered_text": "The red eraser is positioned to the left of the pencil, which deviates from the required placement. [E10]",
+      "citations": [
+        "E10"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Low-light_CD/test/logical_anomalies/Placement/024.jpg",
+    "request_id": "6b0a26d6f9885c29544baea2b0130b3d"
+  },
+  {
+    "source_trace_sha256": "05439cd87256fc747ffecf51b74b6af6597dd674bdf148beccb6ac8049aebeef",
+    "decision": "anomaly",
+    "score": 4.125412886477891,
+    "threshold": 2.3748890097351123,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E09"
+        ],
+        "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+      }
+    ],
+    "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+    "evidence": {
+      "E09": {
+        "name": "blue eraser left of pencil",
+        "observed": [
+          0.34296656479850823,
+          0.15201450892857143
+        ],
+        "requirement": {
+          "operator": "less"
+        },
+        "observed_display": "[0.34297, 0.15201]",
+        "requirement_display": "{\"operator\": \"less\"}",
+        "source_paths": [
+          "facts.attributes.blue_eraser_instances",
+          "facts.attributes.black_pencil_instances"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E09\"],\n      \"text\": \"The blue eraser is positioned to the left of the pencil, which deviates from the required placement.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E09"
+          ],
+          "text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement."
+        }
+      ],
+      "rendered_text": "The blue eraser is positioned to the left of the pencil, which deviates from the required placement. [E09]",
+      "citations": [
+        "E09"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Stationery_Mesh_BG/test/logical_anomalies/Placement/041.jpg",
+    "request_id": "65115dc24bb07414b686608d48c442ff"
+  },
+  {
+    "source_trace_sha256": "e72a597f8bbe4979c69cc54f94794b5a42970f10d4bffa2ebe2b9df98c5e2897",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "blue stick count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.blue_stick"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "red stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_stick"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The blue stick count and red stick count both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Sticks/test/good/034.jpg",
+    "request_id": "487ca7b854708b9714f446e5257b893a"
+  },
+  {
+    "source_trace_sha256": "bcd643eb019b718c99e960a678dbe82263000287cb655835f5979f8133050650",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 3.487468480239995,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "blue stick count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.blue_stick"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "red stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_stick"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The blue stick count and red stick count both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Sticks_Blurry_CD/test/good/048.jpg",
+    "request_id": "65b6fe60011e681e09c29cc6663371bf"
+  },
+  {
+    "source_trace_sha256": "5e0bc850d0538c113d8ff87d6fb5a5cb22585db93b662ad539e50196606bc5bc",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "blue stick count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.blue_stick"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "red stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_stick"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The blue stick count and red stick count both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Sticks_Cable_BG/test/good/049.jpg",
+    "request_id": "af7d652e07c7eb25240fc611af70751e"
+  },
+  {
+    "source_trace_sha256": "645e33afdc316dbcdc77facad0b121af859d2e57f4c08d74491a2dcf6bb4abbf",
+    "decision": "anomaly",
+    "score": 7.155412886477891,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red stick count exceeds the required amount."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The blue red length ratio is missing, making the measurement unavailable."
+      }
+    ],
+    "text": "The red stick count exceeds the required amount. [E02] The blue red length ratio is missing, making the measurement unavailable. [E03]",
+    "evidence": {
+      "E02": {
+        "name": "red stick count",
+        "observed": 5,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "5",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_stick"
+        ],
+        "object_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "residual": 4.0,
+        "normalized_score": 7.044522437723423
+      },
+      "E03": {
+        "name": "measurement unavailable",
+        "observed": [
+          "blue_red_length_ratio"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "blue red length ratio",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red stick count exceeds the required amount.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The blue red length ratio is missing, making the measurement unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The red stick count exceeds the required amount."
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The blue red length ratio is missing, making the measurement unavailable."
+        }
+      ],
+      "rendered_text": "The red stick count exceeds the required amount. [E02] The blue red length ratio is missing, making the measurement unavailable. [E03]",
+      "citations": [
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Sticks_Low-light_CD/test/logical_anomalies/Length/046.jpg",
+    "request_id": "7e5176706958a752bc296ea903415c74"
+  },
+  {
+    "source_trace_sha256": "0b115978ccffee957b36e2b36369b3b98c813e766a8fb7021b5b6d955f9528d3",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The blue stick count and red stick count both satisfy their respective requirements."
+      }
+    ],
+    "text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "blue stick count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.blue_stick"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "red stick count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_stick"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The blue stick count and red stick count both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The blue stick count and red stick count both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The blue stick count and red stick count both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Sticks_Mesh_BG/test/good/001.jpg",
+    "request_id": "e880d4e546a9c5cf984105553ba781fc"
+  },
+  {
+    "source_trace_sha256": "e3190a70b5cfab8b38ee5d9fceb6c0c25da2c261ad846f77189a35a050df4a17",
+    "decision": "anomaly",
+    "score": 5.141995167243926,
+    "threshold": 2.398402762306747,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The red tape count exceeds the required amount."
+      },
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is missing, preventing verification."
+      }
+    ],
+    "text": "The red tape count exceeds the required amount. [E02] The green red length ratio is missing, preventing verification. [E03]",
+    "evidence": {
+      "E02": {
+        "name": "red tape count",
+        "observed": 3,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "3",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.red_tape"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2
+        ],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      },
+      "E03": {
+        "name": "measurement unavailable",
+        "observed": [
+          "green_red_length_ratio"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "green red length ratio",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 2.3513752571634776
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The red tape count exceeds the required amount.\"\n    },\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is missing, preventing verification.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The red tape count exceeds the required amount."
+        },
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is missing, preventing verification."
+        }
+      ],
+      "rendered_text": "The red tape count exceeds the required amount. [E02] The green red length ratio is missing, preventing verification. [E03]",
+      "citations": [
+        "E02",
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes_Blurry_CD/test/logical_anomalies/Type/004.jpg",
+    "request_id": "edfabab3b62f9a25ec5bc686a093f231"
+  },
+  {
+    "source_trace_sha256": "a302122dabad5597250c70aa7bb54fc82eb12721cbc8be3d8b48574815994e18",
+    "decision": "anomaly",
+    "score": 7.442298762772097,
+    "threshold": 1.9848283520364198,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "text": "The green red length ratio is below the lower bound. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "green red length ratio",
+        "observed": 0.9795560117201227,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.85745339582561,
+          "hi": 2.0796698641972555,
+          "scale": 0.19843194506357756
+        },
+        "observed_display": "0.97956",
+        "requirement_display": "[1.8575, 2.0797]",
+        "source_paths": [
+          "facts.measurements.green_red_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 4.4241736572415755,
+        "normalized_score": 7.368612636408017
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is below the lower bound."
+        }
+      ],
+      "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes_Cable_BG/test/logical_anomalies/Length/011.jpg",
+    "request_id": "bcabde0a23fc2ade109f1538ea7b1636"
+  },
+  {
+    "source_trace_sha256": "8f35ab4a9326b0e7a3c5a057ca461e5c7d0f9ce617fe1aa7940843fdd716d59c",
+    "decision": "anomaly",
+    "score": 7.481155118554468,
+    "threshold": 1.691392638135603,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "text": "The green red length ratio is below the lower bound. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "green red length ratio",
+        "observed": 0.961193345605637,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.85745339582561,
+          "hi": 2.0796698641972555,
+          "scale": 0.19843194506357756
+        },
+        "observed_display": "0.96119",
+        "requirement_display": "[1.8575, 2.0797]",
+        "source_paths": [
+          "facts.measurements.green_red_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 4.516712517900339,
+        "normalized_score": 7.407084275796503
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is below the lower bound."
+        }
+      ],
+      "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes_Low-light_CD/test/logical_anomalies/Length/008.jpg",
+    "request_id": "4e605fb80ff38b0086a5554df3946276"
+  },
+  {
+    "source_trace_sha256": "17aff32c6228acb6014386eaee3c54c22790f908cd4e1b7b445e27907459a52e",
+    "decision": "anomaly",
+    "score": 7.351303384628905,
+    "threshold": 1.691392638135603,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The green red length ratio is below the lower bound."
+      }
+    ],
+    "text": "The green red length ratio is below the lower bound. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "green red length ratio",
+        "observed": 0.9867049615786347,
+        "requirement": {
+          "operator": "interval",
+          "lo": 1.85745339582561,
+          "hi": 2.0796698641972555,
+          "scale": 0.19843194506357756
+        },
+        "observed_display": "0.9867",
+        "requirement_display": "[1.8575, 2.0797]",
+        "source_paths": [
+          "facts.measurements.green_red_length_ratio"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 4.388146444706711,
+        "normalized_score": 7.278518202602877
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The green red length ratio is below the lower bound.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The green red length ratio is below the lower bound."
+        }
+      ],
+      "rendered_text": "The green red length ratio is below the lower bound. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tapes_Mesh_BG/test/logical_anomalies/Length/015.jpg",
+    "request_id": "4b0000504ec3766f3e6055627b22114f"
+  },
+  {
+    "source_trace_sha256": "f67b3e31651dcaff458756dce95e88602f86c0a63969eee216c63df1710a3823",
+    "decision": "anomaly",
+    "score": 5.151995167243927,
+    "threshold": 1.6748103573695678,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The nut count is below the required count."
+      }
+    ],
+    "text": "The nut count is below the required count. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "nut count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "0",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.nut"
+        ],
+        "object_indices": [],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The nut count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The nut count is below the required count."
+        }
+      ],
+      "rendered_text": "The nut count is below the required count. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools/test/logical_anomalies/Quantity/019.jpg",
+    "request_id": "fd12e84e65a76dbd788840878b3f48b5"
+  },
+  {
+    "source_trace_sha256": "81ceaccb102c393905641ba74b473ec5a977594951ea0ff61ab753ea472667f3",
+    "decision": "anomaly",
+    "score": 4.165858110855125,
+    "threshold": 1.9653692505458666,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The bolt count is below the required count."
+      }
+    ],
+    "text": "The bolt count is below the required count. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "bolt count",
+        "observed": 0,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "0",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.bolt"
+        ],
+        "object_indices": [],
+        "residual": 2.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The bolt count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The bolt count is below the required count."
+        }
+      ],
+      "rendered_text": "The bolt count is below the required count. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools_Blurry_CD/test/logical_anomalies/Quantity/023.jpg",
+    "request_id": "bfd4861f8e7e5f15415b7974426caf83"
+  },
+  {
+    "source_trace_sha256": "6be0979f8d06caec1821341ae67966c3abe7ecf9d592035d6ec4f28dcf56a086",
+    "decision": "anomaly",
+    "score": 5.195858110855125,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+      }
+    ],
+    "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "bolt bin",
+        "observed": [
+          0.7915616783523225,
+          0.7934247709998051
+        ],
+        "requirement": {
+          "operator": "every_half_open",
+          "lo": 0.0,
+          "hi": 0.3333333333333333,
+          "axis": 0
+        },
+        "observed_display": "[0.79156, 0.79342]",
+        "requirement_display": "{\"operator\": \"every_half_open\", \"lo\": 0.0, \"hi\": 0.3333333333333333, \"axis\": 0}",
+        "source_paths": [
+          "facts.attributes.bolt_instances"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The bolt bin deviates from the requirement as every half-open condition is not satisfied.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+        }
+      ],
+      "rendered_text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools_Cable_BG/test/logical_anomalies/Placement/039.jpg",
+    "request_id": "184e837fd4274df64fd48e1540ba4715"
+  },
+  {
+    "source_trace_sha256": "e2d113e94ce2d63d4e9b04a269ff10b37e28d92f74f1f06d5d42b5b28237d181",
+    "decision": "anomaly",
+    "score": 5.195858110855125,
+    "threshold": 1.6748103573695678,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+      }
+    ],
+    "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+    "evidence": {
+      "E04": {
+        "name": "bolt bin",
+        "observed": [
+          0.4911426434980772,
+          0.46427367034943473
+        ],
+        "requirement": {
+          "operator": "every_half_open",
+          "lo": 0.0,
+          "hi": 0.3333333333333333,
+          "axis": 0
+        },
+        "observed_display": "[0.49114, 0.46427]",
+        "requirement_display": "{\"operator\": \"every_half_open\", \"lo\": 0.0, \"hi\": 0.3333333333333333, \"axis\": 0}",
+        "source_paths": [
+          "facts.attributes.bolt_instances"
+        ],
+        "object_indices": [
+          0,
+          1
+        ],
+        "residual": 2.0,
+        "normalized_score": 5.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The bolt bin deviates from the requirement as every half-open condition is not satisfied.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied."
+        }
+      ],
+      "rendered_text": "The bolt bin deviates from the requirement as every half-open condition is not satisfied. [E04]",
+      "citations": [
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools_Low-light_CD/test/logical_anomalies/Placement/011.jpg",
+    "request_id": "1e23bdea485a206107e7dce518f43027"
+  },
+  {
+    "source_trace_sha256": "edfa94da0a36c73145c569061e3f71e82a9d7e8b5edb554001e6a4a563c37598",
+    "decision": "anomaly",
+    "score": 4.084967662100657,
+    "threshold": 1.9653692505458666,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The washer count is equal to the required count, which is an anomaly."
+      }
+    ],
+    "text": "The washer count is equal to the required count, which is an anomaly. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "washer count",
+        "observed": 3,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "3",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.washer"
+        ],
+        "object_indices": [
+          2,
+          3,
+          4
+        ],
+        "residual": 1.0,
+        "normalized_score": 4.044522437723423
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The washer count is equal to the required count, which is an anomaly.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The washer count is equal to the required count, which is an anomaly."
+        }
+      ],
+      "rendered_text": "The washer count is equal to the required count, which is an anomaly. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "Tools_Mesh_BG/test/logical_anomalies/Quantity/036.jpg",
+    "request_id": "2a106725318564c2d81bddc4547cc25b"
+  },
+  {
+    "source_trace_sha256": "4be56ec0782a90932e98e4519852c81b3b7c33a948845ca8e0705413ec7c46f7",
+    "decision": "no_alarm",
+    "score": 0.0,
+    "threshold": 5.530259349771422,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01",
+          "E02"
+        ],
+        "text": "The tangerine and peach counts both satisfy their respective requirements."
+      }
+    ],
+    "text": "The tangerine and peach counts both satisfy their respective requirements. [E01][E02]",
+    "evidence": {
+      "E01": {
+        "name": "tangerine count",
+        "observed": 2,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "2",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.tangerine"
+        ],
+        "object_indices": [
+          2,
+          3
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      },
+      "E02": {
+        "name": "peach count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 1
+        },
+        "observed_display": "1",
+        "requirement_display": "1",
+        "source_paths": [
+          "facts.counts.peach"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 0.0,
+        "normalized_score": 0.0
+      }
+    },
+    "execution_state": "All executed predicates have zero residual.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\", \"E02\"],\n      \"text\": \"The tangerine and peach counts both satisfy their respective requirements.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01",
+            "E02"
+          ],
+          "text": "The tangerine and peach counts both satisfy their respective requirements."
+        }
+      ],
+      "rendered_text": "The tangerine and peach counts both satisfy their respective requirements. [E01][E02]",
+      "citations": [
+        "E01",
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "breakfast_box/test/good/001.png",
+    "request_id": "5db90aa39097926f60cb4ca3787fb6e5"
+  },
+  {
+    "source_trace_sha256": "8ff44d2d4b03bb8ae2098c14c2f3971ae8d6a6c0b8c9bb01447afac1b27a462c",
+    "decision": "anomaly",
+    "score": 6.4802614062264645,
+    "threshold": 0.0,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The juice icon does not correspond as required."
+      }
+    ],
+    "text": "The juice icon does not correspond as required. [E06]",
+    "evidence": {
+      "E06": {
+        "name": "juice icon correspondence",
+        "observed": [
+          "banana",
+          "cherry"
+        ],
+        "requirement": {
+          "operator": "pair_equal"
+        },
+        "observed_display": "[banana, cherry]",
+        "requirement_display": "{\"operator\": \"pair_equal\"}",
+        "source_paths": [
+          "facts.liquid_type",
+          "facts.fruit_icon_type",
+          "facts.liquid_colour_descriptor"
+        ],
+        "object_indices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "residual": 1.0,
+        "normalized_score": 6.41610040220442
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The juice icon does not correspond as required.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E06"
+          ],
+          "text": "The juice icon does not correspond as required."
+        }
+      ],
+      "rendered_text": "The juice icon does not correspond as required. [E06]",
+      "citations": [
+        "E06"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "juice_bottle/test/logical_anomalies/121.png",
+    "request_id": "3bc67c598953c10362c3dbef3f12cedc"
+  },
+  {
+    "source_trace_sha256": "107fbf3d6202d98b7cc71334f75afe09ae6ead6ad41305719ad463c6acf659c4",
+    "decision": "anomaly",
+    "score": 6.678836790452082,
+    "threshold": 3.6072581748834884,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E01"
+        ],
+        "text": "The pushpin count is below the required count."
+      }
+    ],
+    "text": "The pushpin count is below the required count. [E01]",
+    "evidence": {
+      "E01": {
+        "name": "pushpin count",
+        "observed": 13,
+        "requirement": {
+          "operator": "equal",
+          "value": 15
+        },
+        "observed_display": "13",
+        "requirement_display": "15",
+        "source_paths": [
+          "facts.counts.pushpin"
+        ],
+        "object_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "residual": 2.0,
+        "normalized_score": 6.517452896464707
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E01\"],\n      \"text\": \"The pushpin count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E01"
+          ],
+          "text": "The pushpin count is below the required count."
+        }
+      ],
+      "rendered_text": "The pushpin count is below the required count. [E01]",
+      "citations": [
+        "E01"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "pushpins/test/logical_anomalies/052.png",
+    "request_id": "8f8ce7ffa9dbdd282fd68e122f65aa89"
+  },
+  {
+    "source_trace_sha256": "3dd8e56d8fe90c5fcf4b99c5954a8b57f4462d3338b32a3dbfad281ce41aa83b",
+    "decision": "anomaly",
+    "score": 6.614492872160468,
+    "threshold": 4.4300464912707715,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The screw count is below the required count."
+      },
+      {
+        "evidence_ids": [
+          "E04"
+        ],
+        "text": "The measurement is unavailable due to missing long screw length and short screw length values."
+      }
+    ],
+    "text": "The screw count is below the required count. [E03] The measurement is unavailable due to missing long screw length and short screw length values. [E04]",
+    "evidence": {
+      "E03": {
+        "name": "screw count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "1",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.screw"
+        ],
+        "object_indices": [
+          4
+        ],
+        "residual": 1.0,
+        "normalized_score": 6.484796933490655
+      },
+      "E04": {
+        "name": "measurement unavailable",
+        "observed": [
+          "long_screw_length",
+          "short_screw_length"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "long screw length, short screw length",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 6.484796933490655
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The screw count is below the required count.\"\n    },\n    {\n      \"evidence_ids\": [\"E04\"],\n      \"text\": \"The measurement is unavailable due to missing long screw length and short screw length values.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The screw count is below the required count."
+        },
+        {
+          "evidence_ids": [
+            "E04"
+          ],
+          "text": "The measurement is unavailable due to missing long screw length and short screw length values."
+        }
+      ],
+      "rendered_text": "The screw count is below the required count. [E03] The measurement is unavailable due to missing long screw length and short screw length values. [E04]",
+      "citations": [
+        "E03",
+        "E04"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "screw_bag/test/logical_anomalies/106.png",
+    "request_id": "e2dce14673603cd2ec40f95538be7dec"
+  },
+  {
+    "source_trace_sha256": "d93e133c3667b6ec605a590227faa6c09aab1c6f6d38cbd2b82cb38ebf40a0ee",
+    "decision": "anomaly",
+    "score": 8.600729964258223,
+    "threshold": 4.417394968853399,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E03"
+        ],
+        "text": "The color port count deviates from the required specification."
+      }
+    ],
+    "text": "The color port count deviates from the required specification. [E03]",
+    "evidence": {
+      "E03": {
+        "name": "color port count",
+        "observed": [
+          5,
+          2
+        ],
+        "requirement": {
+          "operator": "every_equal",
+          "value": 2,
+          "empty_residual": 2
+        },
+        "observed_display": "[5, 2]",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.blocks",
+          "facts.cable_color"
+        ],
+        "object_indices": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "residual": 3.0,
+        "normalized_score": 8.472270673671474
+      }
+    },
+    "execution_state": "The selected score contributions support the recorded alarm.",
+    "raw_llm_output": "{\n  \"decision\": \"anomaly\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E03\"],\n      \"text\": \"The color port count deviates from the required specification.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "anomaly",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E03"
+          ],
+          "text": "The color port count deviates from the required specification."
+        }
+      ],
+      "rendered_text": "The color port count deviates from the required specification. [E03]",
+      "citations": [
+        "E03"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "splicing_connectors/test/logical_anomalies/016.png",
+    "request_id": "2a457a80471fcdaaf2b5a0c88edd62e4"
+  },
+  {
+    "source_trace_sha256": "893a8efac68cbd90b96d647a87d40c0177437df891c857c985d7922432cd314d",
+    "decision": "no_alarm",
+    "score": 3.6072581748834884,
+    "threshold": 3.6072581748834884,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E06"
+        ],
+        "text": "The separator minimum contrast measurement is unavailable."
+      }
+    ],
+    "text": "The separator minimum contrast measurement is unavailable. [E06]",
+    "evidence": {
+      "E06": {
+        "name": "measurement unavailable",
+        "observed": [
+          "separator_min_contrast"
+        ],
+        "requirement": {
+          "operator": "empty"
+        },
+        "observed_display": "separator min contrast",
+        "requirement_display": "all required operands available",
+        "source_paths": [
+          "executor.unknown"
+        ],
+        "object_indices": [],
+        "residual": 1.0,
+        "normalized_score": 3.5715427474093944
+      }
+    },
+    "execution_state": "The full score does not exceed the alarm threshold; observed deviations are retained.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E06\"],\n      \"text\": \"The separator minimum contrast measurement is unavailable.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E06"
+          ],
+          "text": "The separator minimum contrast measurement is unavailable."
+        }
+      ],
+      "rendered_text": "The separator minimum contrast measurement is unavailable. [E06]",
+      "citations": [
+        "E06"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "pushpins/test/good/078.png",
+    "request_id": "cf2d5fb8d2f77e1c60edd645c146b7a6"
+  },
+  {
+    "source_trace_sha256": "b6f3eef3994c9afd94c3a0b47ed4c3327ddb81af22c051a83c0100dca78a18e8",
+    "decision": "no_alarm",
+    "score": 3.1177706772992075,
+    "threshold": 4.4300464912707715,
+    "language": "en",
+    "expression": "language_model",
+    "claims": [
+      {
+        "evidence_ids": [
+          "E02"
+        ],
+        "text": "The washer count is below the required count."
+      }
+    ],
+    "text": "The washer count is below the required count. [E02]",
+    "evidence": {
+      "E02": {
+        "name": "washer count",
+        "observed": 1,
+        "requirement": {
+          "operator": "equal",
+          "value": 2
+        },
+        "observed_display": "1",
+        "requirement_display": "2",
+        "source_paths": [
+          "facts.counts.washer"
+        ],
+        "object_indices": [
+          2
+        ],
+        "residual": 1.0,
+        "normalized_score": 3.0869016606922846
+      }
+    },
+    "execution_state": "The full score does not exceed the alarm threshold; observed deviations are retained.",
+    "raw_llm_output": "{\n  \"decision\": \"no_alarm\",\n  \"claims\": [\n    {\n      \"evidence_ids\": [\"E02\"],\n      \"text\": \"The washer count is below the required count.\"\n    }\n  ]\n}",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "decision": "no_alarm",
+      "claims": [
+        {
+          "evidence_ids": [
+            "E02"
+          ],
+          "text": "The washer count is below the required count."
+        }
+      ],
+      "rendered_text": "The washer count is below the required count. [E02]",
+      "citations": [
+        "E02"
+      ],
+      "checks_scope": "JSON/decision/source-ID coverage, numeric/citation exclusion, relation grouping, explicit missingness and selected lexical conflicts; unrestricted semantic accuracy requires separate review."
+    },
+    "detector_modified": false,
+    "source_id": "screw_bag/test/logical_anomalies/071.png",
+    "request_id": "7b3f86b2040fe368b3c7867c40d0d367"
+  }
+]

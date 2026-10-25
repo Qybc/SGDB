@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "images": 9031,
+  "executed_rule_records": 66297,
+  "alarms": 5725,
+  "max_score_error": 3.552713678800501e-15,
+  "threshold_refits": 0,
+  "model_forward_calls": 0,
+  "input": "frozen facts; not raw-image inference"
+}

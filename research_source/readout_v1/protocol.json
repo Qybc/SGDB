@@ -1,0 +1,37 @@
+{
+  "experiment": "SGDB frozen measurement comparison v1",
+  "date": "2026-10-24",
+  "status": "specified before new test readouts and comparative results",
+  "development_disclosure": "Public test outputs and the four diagnostic cases were inspected before this experiment. This is an exploratory mechanism study, not a blind confirmatory evaluation.",
+  "categories": ["screw_bag", "Tapes", "Ropes", "Sticks", "Stationery"],
+  "target_classes": {"screw_bag": [2], "Tapes": [0, 1], "Ropes": [0, 1], "Sticks": [0, 1], "Stationery": [0, 1, 2, 3]},
+  "settings": ["original_frozen", "uniform_mask", "quality_select"],
+  "mask_readout": {
+    "VID_source": "Existing frozen FMP category-mask PNG; 256x256 nearest-neighbor export, with class index+1, zero background",
+    "screw_source": "Existing frozen ZL1 packed binary screw masks, 160x224; these are the same masks previously used by the current screw readout",
+    "ownership": "All same-class foreground pixels assigned to nearest bound instance center in native image coordinates; no detector box clipping; semantic instance count is immutable",
+    "axis": "Native-coordinate PCA, endpoints at projection quantiles 0.01 and 0.99",
+    "minimum_assigned_pixels": 16,
+    "unavailable": "Keep original axis, record fallback; no object deletion, no normal imputation"
+  },
+  "quality": {
+    "line_support": "Mean membership of 64 equidistant axis samples in the assigned instance mask dilated by one mask pixel",
+    "extent_coverage": "Fraction of assigned foreground projections inside the candidate axis endpoint interval, extended by one native mask-pixel diagonal",
+    "component_purity": "Fraction of assigned foreground in its largest 8-connected component",
+    "score": "sqrt(line_support * extent_coverage) * component_purity",
+    "normal_DEV_floor": "Global 10th percentile of readable mask-axis quality over all bound target objects in original-condition normal DEV, linear quantile",
+    "selection": "Use mask axis only when Q_mask >= frozen DEV floor and Q_mask >= Q_original + 0.05; otherwise retain original axis",
+    "parameters_chosen_using_test_scores": false,
+    "candidate_search": "None. One declared selector, no per-category switches or post-test retries."
+  },
+  "invariants": ["DFD identities, confidences and counts", "frozen object centers and boxes", "one-to-one association", "frozen color/OCR and non-length rules", "original train/DEV/CAL roles", "all 9031 test records retained"],
+  "reference_modes": {
+    "own_normal": "Primary end-to-end comparison: identical original normal TRAIN/DEV interval fitting, TRAIN residual reference and independent CAL p95(higher), strict score > threshold; fit separately after each readout transformation",
+    "shared_original": "Diagnostic comparison: retain original normal intervals, residual references and CAL thresholds; only test readouts change"
+  },
+  "report": ["FP to TN", "FN to TP", "TP to FN", "TN to FP", "remaining original errors", "macro AUROC/F1 at original task granularity", "affected categories and full datasets", "unique original/capture parents separately from capture-condition records", "sample-level transition ledger", "four preselected cases"],
+  "new_training": 0,
+  "network_forward_calls": 0,
+  "baseline_runs": 0,
+  "manuscript_or_master_table_changes": false
+}

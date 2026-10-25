@@ -1,0 +1,15 @@
+{
+  "model": "existing frozen Qwen3-VL-8B-Instruct; text-only use",
+  "input_trace_sha256": "6fd34808e27cc114b77b2f0acfe27164910fa592ab1f5506a24654267bd0827c",
+  "reports": 70,
+  "source_images": 63,
+  "tasks": 55,
+  "pilot_reports": 14,
+  "selection": "One SHA256-ranked image per task, six existing case sources, and one representative of each joint-alarm, unknown-nonalarm and deviation-nonalarm state; no truth consumed",
+  "training": 0,
+  "detector_calls": 0,
+  "baseline_runs": 0,
+  "threshold_refits": 0,
+  "generation": "Greedy qualitative claims with executor-attached evidence IDs; numeric evidence is rendered separately by the executor. Rejections use structured-trace fallback.",
+  "description_clarification": "The launch request file was not changed; this field clarifies the final claim contract."
+}

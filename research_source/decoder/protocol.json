@@ -1,0 +1,73 @@
+{
+  "id": "DFD_normal_only_20261020",
+  "created_unix": 1792508802.189944,
+  "categories": [
+    "breakfast_box",
+    "juice_bottle",
+    "pushpins",
+    "splicing_connectors",
+    "screw_bag",
+    "Sticks",
+    "Fruits",
+    "Tools",
+    "Cookies",
+    "Tapes",
+    "Stationery",
+    "Ropes",
+    "Blocks",
+    "Dishes",
+    "Balls"
+  ],
+  "scope": {
+    "LOCO": "logical5/1136",
+    "VID-AD": "full50/7895"
+  },
+  "variants": [
+    "plain_set",
+    "evidence_edit"
+  ],
+  "main_variant": "evidence_edit",
+  "initialization": "Frozen original FMP-v1 per-category 40-epoch weights; new random decoder; no U2/LF1/OGD weights",
+  "architecture": {
+    "feature": "48-channel frozen pixels pooled to80x112; cross-attention memory40x56",
+    "queries": "64 confidence-ordered FMP candidates, padded, plus64 free8x8 spatial queries; no expected counts or task rules",
+    "decoder": "2 Transformer decoder layers, width64,4 heads; joint class/no-object,mask,center,box,unordered axis heads",
+    "plain_set": "same dimensions, ordinary spatial attention and supervised object/mask/geometry losses",
+    "evidence_edit": "predicted-mask feedback into second cross-attention; mask-geometry consistency; paired-edit count and center-change consistency; duplicate query perturbations",
+    "limitations": "ordinary set matching and mask attention are established techniques; combined mechanism is experimental, not claimed novel or successful before validation"
+  },
+  "training": {
+    "seed": 42,
+    "cycles": 32,
+    "updates_per_cycle": 24,
+    "parents_per_update": 1,
+    "views_per_parent": 2,
+    "optimizer_steps_per_head": 768,
+    "image_exposures_per_head": 1536,
+    "optimizer": "AdamW",
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "schedule": "cosine by cycle",
+    "gradient_clip": 5,
+    "supervision": "existing normal-source component labels and weak masks; one deterministic add/remove/move edit per parent, inherited roles and updated factual targets; edited arrangements can be anomalous; no binary anomaly loss",
+    "loss": "classCE(no-object weight.2)+2 centerL1+2 boxL1+3 symmetric axisL1+maskBCE/Dice; full additionally.25 geometry-binding+.25 edit-consistency",
+    "budget": "40 original FMP epochs plus768 decoder updates/1536 image exposures per category and variant; 30 independently trained heads; cycles are not original FMP epochs"
+  },
+  "selection": {
+    "checkpoints": "cycle1,8,16,24,32; earliest strict maximum",
+    "objective": ".8 macro class pointF1(center distance<.08)+.2 macro class support-mask Dice on normal DEV originals and deterministic same-parent edits",
+    "readout": "class argmax including no-object; mask sigmoid>.5 for evidence; no test threshold/model/variant selection",
+    "no_test_or_CAL_in_training_or_model_selection": true,
+    "fallback": "none: both preregistered decoder variants evaluated even if inferior"
+  },
+  "evaluation": {
+    "normal_reference": "same TRAINq1/q99 interval and DEVpadding formula; same empirical tail and max+.01sum",
+    "calibration": "same held-out normal CAL,p95(higher),strict score>threshold,per deployment task",
+    "appearance_and_OCR": "same frozen FMP semantic masks, original attribute extractors and cached OCR; no new appearance classifier or VLM calls",
+    "original_method": "FMP-v1+ZL1 cached predictions; no baseline retraining",
+    "all_test_images_each": 9031,
+    "publication": "separate report only; original official tables and manuscript untouched",
+    "public_test_limit": "public tests and known cases used in earlier development; not blind evaluation",
+    "annotation_limit": "VID supervision and masks include proxy/weak labels; no new precise instance or axis ground truth claimed"
+  }
+}

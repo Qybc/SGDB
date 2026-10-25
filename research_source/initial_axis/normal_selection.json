@@ -1,0 +1,109 @@
+{
+  "state": "selected_on_normal_DEV",
+  "chosen": {
+    "name": "box_voronoi_trim0.0",
+    "assignment": "box_voronoi",
+    "trim": 0.0
+  },
+  "selected_mode": "box_voronoi_trim0.0",
+  "results": {
+    "anchor": {
+      "train": {
+        "screws": 480,
+        "mean_relative_error": 0.07788151216782774,
+        "median_relative_error": 0.047684540840737644,
+        "p95_relative_error": 0.19718900290603888,
+        "errors_above_20_percent": 24,
+        "axis_updates": 0
+      },
+      "dev": {
+        "screws": 60,
+        "mean_relative_error": 0.11957203156568215,
+        "median_relative_error": 0.0495927422824839,
+        "p95_relative_error": 0.5299729975741514,
+        "errors_above_20_percent": 8,
+        "axis_updates": 0
+      }
+    },
+    "components_trim0.0": {
+      "train": {
+        "screws": 480,
+        "mean_relative_error": 0.03490562074191786,
+        "median_relative_error": 0.010646184546118485,
+        "p95_relative_error": 0.14806863283778743,
+        "errors_above_20_percent": 10,
+        "axis_updates": 288
+      },
+      "dev": {
+        "screws": 60,
+        "mean_relative_error": 0.08304648836855687,
+        "median_relative_error": 0.016095137105964486,
+        "p95_relative_error": 0.5299729975741514,
+        "errors_above_20_percent": 6,
+        "axis_updates": 32
+      },
+      "admitted": true
+    },
+    "components_trim0.01": {
+      "train": {
+        "screws": 480,
+        "mean_relative_error": 0.04857296518111483,
+        "median_relative_error": 0.030475572612044373,
+        "p95_relative_error": 0.14806863283778743,
+        "errors_above_20_percent": 10,
+        "axis_updates": 288
+      },
+      "dev": {
+        "screws": 60,
+        "mean_relative_error": 0.09563226534568667,
+        "median_relative_error": 0.035261691975487286,
+        "p95_relative_error": 0.5299729975741514,
+        "errors_above_20_percent": 6,
+        "axis_updates": 32
+      },
+      "admitted": true
+    },
+    "box_voronoi_trim0.0": {
+      "train": {
+        "screws": 480,
+        "mean_relative_error": 0.022490272973207607,
+        "median_relative_error": 0.0066297841038130715,
+        "p95_relative_error": 0.12367788916390346,
+        "errors_above_20_percent": 7,
+        "axis_updates": 468
+      },
+      "dev": {
+        "screws": 60,
+        "mean_relative_error": 0.024965221827836028,
+        "median_relative_error": 0.00834112352448374,
+        "p95_relative_error": 0.09355868384268985,
+        "errors_above_20_percent": 0,
+        "axis_updates": 60
+      },
+      "admitted": true
+    },
+    "box_voronoi_trim0.01": {
+      "train": {
+        "screws": 480,
+        "mean_relative_error": 0.04611328610778352,
+        "median_relative_error": 0.03219319353995655,
+        "p95_relative_error": 0.14306224311699456,
+        "errors_above_20_percent": 9,
+        "axis_updates": 468
+      },
+      "dev": {
+        "screws": 60,
+        "mean_relative_error": 0.04683502741921631,
+        "median_relative_error": 0.035375375059078736,
+        "p95_relative_error": 0.12955867699452503,
+        "errors_above_20_percent": 0,
+        "axis_updates": 60
+      },
+      "admitted": true
+    }
+  },
+  "candidate_lock_sha256": "9cba96814d83cdb285f8c90d7d2601e438fc7ac6b2d86d899221219907b66b7e",
+  "created_unix": 1792396079.6028988,
+  "test_or_CAL_used_for_selection": false,
+  "counts_centers_boxes_classes_and_other_axes_unchanged": true
+}

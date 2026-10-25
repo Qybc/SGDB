@@ -1,0 +1,16 @@
+{
+  "floor": 0.9908659040240699,
+  "quantile": 0.1,
+  "readable_normal_DEV_target_axes": 609,
+  "DEV_quality_quantiles": [
+    0.7132492480163708,
+    0.9603156158750069,
+    0.9908659040240699,
+    0.9960190924768794,
+    0.9990046777667065,
+    1.0,
+    1.0
+  ],
+  "test_or_CAL_used": false,
+  "global_not_per_category": true
+}
