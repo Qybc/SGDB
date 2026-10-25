@@ -12,8 +12,9 @@
 | `explanation/engine.py` | Executed predicate records and compact sufficient alarm certificates |
 | `language/` | Predicate/evidence contracts and frozen-language realization interface |
 
-`scripts/` is the verified CPU interface. It consumes frozen facts and scores
-instead of starting a neural model or refitting calibration.
+The CPU reproduction scripts consume frozen facts and scores.
+`scripts/infer_image.py` and `scripts/trace_image.py` provide the separately
+validated screw_bag raw-image path; see [the example](RAW_IMAGE_DEMO.md).
 
 Research-source paths have been adapted for distribution. The optional environment
 variables `SGDB_ARCHIVE_ROOT`, `SGDB_FRONTEND_ROOT`, `SGDB_INITIAL_AXIS_ROOT` and

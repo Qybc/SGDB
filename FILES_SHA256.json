@@ -1,9 +1,10 @@
 {
   ".gitignore": "5abd17d9746e98c62bccbcdd0e3bad744bb0d8c4ee268de73113db65cf23ca1e",
   "CITATION.cff": "57d6d3a25c28f26f94b2d9083ed516bcd9857b32c156c1f104f67e31452ee133",
-  "README.md": "3dc22cf675989871935bd502bbed9e83737c90a9468256bdb9805c0ef609c338",
+  "RAW_IMAGE_DEMO.md": "858f55a3a18c95792d300efe7a4fcafa0022516caf35a5acc8327718731ca41b",
+  "README.md": "d44f3dbd87cadeaad456e25629f212713fe4a337af60fb620efa33022e78f3ef",
   "README_中文.md": "e40c4108d24af5a747a08ca893f5623976add435bf75ef0cc54aff62ff7bf29f",
-  "RESEARCH_SOURCE.md": "1e5f1ba35f5752424946a684a297b8f57eb014302d6d4769104b3cdbb406d906",
+  "RESEARCH_SOURCE.md": "6efa061b803327a48893879aabbe5e57ffe0b8ff9b3776a471630b3bb39b0b78",
   "analysis_protocol.json": "18e72e8d386bfa6275b60a6b2d37fd3525df57a11e1d98a9ffd349ebda2c14ff",
   "audit/bootstrap_independent_check.json": "420311689aa9f1b354720eee02b8b510ad95969c5c1986770c8c043802cd05dd",
   "audit/decoder_checkpoint_match.json": "ad920a37e352243e72561e29af53a3cae479b85e59bb4856f222280f6afb04c9",
@@ -13,6 +14,7 @@
   "audit/language_replay.json": "eb9c8ed9606a0e58819edb8426f1bf41bfb324c063bee10a1a17d3812d46f199",
   "audit/model_inventory.json": "c2e3391ea2b4d798cce66e139194440914c5db89e2d319b3f83d22edb6c2f9a7",
   "audit/prediction_provenance.json": "6eb22426da296f1d7039e66735ba276ca8d4efabadce73ec095814c249fc4680",
+  "audit/raw_image_verification.json": "2528d51b845e4d0f7e0b1d8b2162454cddc6fb9ac30e5b3f53e3b35e98b0de99",
   "audit/research_runtime.json": "c3ee4f2af9113c3c3750d894c32941af6d6d32d070ec884b38df4cf3a63ec689",
   "audit/trace_summary.json": "6e9f7ceeb4f775699ddaff4eeab0ef60bd5d7cfbb1bfa2fcbac1be3e4ee966bc",
   "checkpoint_receipts/semantic_decoder/Balls/complete.json": "df5cf24b4e71a6b77db8af7865679fd8c5b7abd7147223a100eb4249eefdc828",
@@ -152,9 +154,11 @@
   "results/transition_summary.json": "c962e30a70195ff7d36d74d5f2f79cc30364273f268d9190667c2701cac47b6d",
   "results/view_transitions.csv": "ed54b2281508cfedc2b5d9b910a03fe34b3c7b323ced25bf02c4417708c6cf96",
   "scripts/check_assets.py": "be9820e8ee8c688cbf1d1ee77da23850d33dd7368a472f2a4318c7cc7fc67990",
+  "scripts/infer_image.py": "9b4cce5a3a93640c0aaff46a8291ec6ab924df901d45d6e44614f1d83695c722",
   "scripts/replay_facts.py": "b2fc02e511af7e0adf8e34529a7afdcfe6bc1399b4b06cb4b9a4ce78f3aee451",
   "scripts/replay_language.py": "fbc7284e96c5330385e40a65f95c27dea94f469462a0d04602897634a9f85984",
   "scripts/reproduce.py": "e842edc52ae672c9fa01319cb0842af146fa70f12c2db7b97adc8010f3ff2252",
+  "scripts/trace_image.py": "41252899c1363aaa2d595540ae233edc78516966b8bd9a4ca73bbacac621ec0a",
   "scripts/verify_bootstrap.py": "da180d26dbf4cbb661c6cbbe3174380af4908b7c7e904d0a680e810a3cc38ac7",
   "scripts/verify_integrity.py": "c85ec48d6c2a345f4bb19189f618ba4b65091db1fc026d363eae0c62ee93f281"
 }

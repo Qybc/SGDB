@@ -1,0 +1,53 @@
+{
+  "state": "passed",
+  "comparison_phase": "after raw-image inference completed",
+  "examples": [
+    {
+      "case": "image_01",
+      "source_id": "screw_bag/test/good/000.png",
+      "image_sha256": "fe1621dd80467907ae1c61a31169c3e0544c9d81df977badf05382e6606c4640",
+      "decision": "no_alarm",
+      "score": 0.0,
+      "threshold": 4.4300464912707715,
+      "score_error": 0.0,
+      "max_field_errors": {
+        "objects": 0,
+        "facts": 0,
+        "association": 1.0842021724855044e-19,
+        "native_size": 0,
+        "support_events": 1.7053025658242404e-13
+      },
+      "llm_contract_valid": true,
+      "explanation": "The nut, washer, and screw counts all satisfy their respective requirements. [E01][E02][E03]"
+    },
+    {
+      "case": "image_02",
+      "source_id": "screw_bag/test/logical_anomalies/000.png",
+      "image_sha256": "546d88ace2ce46a2fd5dab11f82f72434cbae938b7cc5790acddbeafba97f615",
+      "decision": "anomaly",
+      "score": 6.130061173823091,
+      "threshold": 4.4300464912707715,
+      "score_error": 0.0,
+      "max_field_errors": {
+        "objects": 0,
+        "facts": 0,
+        "association": 1.0842021724855044e-19,
+        "native_size": 0,
+        "support_events": 2.2737367544323206e-13
+      },
+      "llm_contract_valid": true,
+      "explanation": "The screw length exceeds the upper bound. [E05]"
+    }
+  ],
+  "deployment": "complete_support V2",
+  "physical_gpu_used": 2,
+  "new_training": 0,
+  "baseline_reruns": 0,
+  "threshold_refits": 0,
+  "scope": "Two archived benchmark samples verify the inference implementation; not a new blind evaluation or a benchmark rerun.",
+  "verified_source_sha256": {
+    "infer_image.py": "9b4cce5a3a93640c0aaff46a8291ec6ab924df901d45d6e44614f1d83695c722",
+    "trace_image.py": "41252899c1363aaa2d595540ae233edc78516966b8bd9a4ca73bbacac621ec0a"
+  },
+  "gpu2_memory_after_run_mib": 13
+}

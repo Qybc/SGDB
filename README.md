@@ -85,8 +85,11 @@ not the CPU quick-start interface. See [research-source notes](RESEARCH_SOURCE.m
 The 15 visual-frontend weights and pretrained OCR/LLM runtime assets are not
 included in this snapshot; the checkpoint hashes are listed in
 [`audit/model_inventory.json`](audit/model_inventory.json). Raw benchmark images
-must be obtained from their original providers. This snapshot does not claim a
-validated, self-contained raw-image inference installation. `scripts/check_assets.py`
+must be obtained from their original providers. A new [raw-image inference example](RAW_IMAGE_DEMO.md)
+connects the frozen models, V2 readout, executor and Qwen explanation backend for
+`screw_bag`. Two original-image runs matched the archived scores and decisions
+exactly. The visual-frontend checkpoint and local Qwen model are separate assets.
+Other categories retain the frozen-output interface. `scripts/check_assets.py`
 checks optional supplied checkpoints without running a model.
 
 ## Evaluation protocol
